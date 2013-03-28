@@ -1,0 +1,46 @@
+body{
+    min-width: 1000px;
+}
+.header_content_index{
+    background-color: #0a4c95;
+    height: 40px;
+    font-family: '宋体' ;
+    font-size: 16px;
+    font-weight: bold;
+    list-style:none;
+    display:block;
+}
+
+.header_content{
+    background-color: #0a4c95;
+    height: 40px;
+    font-family: '宋体' ;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.logo {
+    width: 200px;
+    margin-left: 20px;
+
+}
+.mymenu{
+
+}
+.logo h1{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.tables{
+    margin-top: 30px;
+    border-color: #c6c6c6;
+}
+.tables tr td{
+    text-align: center;
+    height: 23px;
+}
+.tdbanner{
+    background-color: #c6c6c6;
+}

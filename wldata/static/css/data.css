@@ -1,0 +1,123 @@
+.logo {
+    width: 300px;
+
+}
+
+.logo2  {
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 15px;
+    float: right; text-align:center;
+}
+
+.header_content {
+    background-color: #2D2D2D;
+    height: 30px;
+    font-family: '宋体';
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 2px;
+    border-bottom-color: #5c9ccc;
+
+}
+
+.demos-nav, .demos-nav dt, .demos-nav dd, .demos-nav ul, .demos-nav li {
+    margin: 0;
+    padding: 0
+}
+
+.demos-nav {
+    float: left;
+    width: 170px;
+    font-size: 1.0em;
+    margin-top: 5px;
+}
+
+.demos-nav dt,
+.demos-nav h4 {
+    margin: 0;
+    padding: 0;
+    font: normal 1.1em "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+    color: #E27613;
+}
+
+.demos-nav dt,
+.demos-nav h4 {
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    line-height: 1.2em;
+    border-bottom: 1px solid #F4F4F4;
+}
+
+.demos-nav dd a,
+.demos-nav li a {
+    border-bottom: 1px solid #F4F4F4;
+    display: block;
+    padding: 4px 3px 4px 8px;
+    font-size: 90%;
+    text-decoration: none;
+    color: #555;
+    margin: 2px 0;
+    height: 13px;
+}
+
+.demos-nav dd a:hover,
+.demos-nav dd a:focus,
+.demos-nav dd a:hover,
+.demos-nav dd a:focus {
+    background: #f3f3f3;
+    color: #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.demos-nav dd a.selected {
+    background: #555;
+    color: #ffffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.chart-div {
+    height: 280px;
+    background-color: #cccccc;
+    margin-top: 5px;
+}
+
+.chart-option {
+    margin-top: 5px;
+    border: 1px #D9D9D9 solid;
+    font: normal 0.8em "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+    color: #333333;
+}
+
+.tables {
+    margin-top: 30px;
+    background-color: #ffffff;
+
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+}
+
+.tables tr td {
+    text-align: center;
+    height: 23px;
+    margin: 1px;
+    padding: 1px;
+    background-color: #ffffff;
+     border-bottom:1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+}
+
+.tdbanner {
+    background-color: #85b3e8;
+}
+#maincontent {
+    background-color: #eee;
+    padding: 3px; margin: 3px;
+}
+

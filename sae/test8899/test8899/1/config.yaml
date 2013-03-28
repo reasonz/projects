@@ -1,0 +1,6 @@
+#name:fetch
+#version:1
+#cron:
+#  - description:fetch
+#    url:insertpost
+#    schedule:* */12 * * *

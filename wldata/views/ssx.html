@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>上海联通统计</title>
+    <link rel="stylesheet" href="static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="static/css/redmond/jquery-ui.css"  type="text/css">
+    <link rel="stylesheet" href="static/css/data.css" type="text/css">
+    <script type="text/javascript" src="static/js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript" src="static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="static/chart/highcharts.js"></script>
+    <script type="text/javascript" src="static/chart/modules/exporting.js"></script>
+    <script type="text/javascript" src="static/ssx/ssx.js"></script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="chart-option">
+                        <table style="margin-top: 3px;margin-bottom: 3px;margin-left: 15px;">
+                            <tr>
+                                <td>
+                                    <select style="width: 100px;">
+                                        <option>pv</option>
+                                        <option>cv</option>
+                                    </select>
+                                </td>
+                                <td><p style="margin-left: 10px;">开始: <input type="text" id="startdate" size="30"/></p>
+                                </td>
+                                <td><p style="margin-left: 10px;">结束: <input type="text" id="enddate" size="30"/></p>
+                                </td>
+                                <td>
+                                    <a href="#" id="button" style="margin-left: 10px">查询</a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="yui-g">
+                    <div class="chart-div">
+                        <div id="container" style="min-width: 300px; height: 300px; margin: 0 auto"></div>
+                    </div>
+                </div>
+                <div class="yui-g" style="margin-top:50px">
+                    <div class="yui-u first">
+
+                        <div class="divtable">
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="3" class="tdbanner"><h4>10天详情页PV</h4></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>日期</strong></td>
+                                    <td><strong>详情页PV</strong></td>
+                                </tr>
+                                %iteminfopv=[{"date":'2012-02-13',"pv":'123'},{"date":'2012-02-13',"pv":'123'},{"date":'2012-02-13',"pv":'123'}]
+                                %for one in iteminfopv:
+                                <tr>
+                                    <td>{{one['date']}}</td>
+                                    <td>{{one['pv']}}</td>
+                                </tr>
+                                %end
+                            </table>
+                        </div>
+                    </div>
+                    <div class="yui-u">
+                       <div class="divtable">
+                    <table width="100%" class="tables" >
+                        <tr  class="tdbanner">
+                            <td colspan="3" ><h4>10天详情页PV</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>详情页PV</strong></td>
+                        </tr>
+                        %iteminfopv=[{"date":'2012-02-13',"pv":'123'},{"date":'2012-02-13',"pv":'123'},{"date":'2012-02-13',"pv":'123'}]
+                        %for one in iteminfopv:
+                        <tr>
+                            <td>{{one['date']}}</td>
+                            <td>{{one['pv']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

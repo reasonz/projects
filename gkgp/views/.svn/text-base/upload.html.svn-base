@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>2013G客盛典 视频_播客_个人多媒体 土豆网</title>
+		<meta name="Keywords" content="音乐频道,视频下载,体育视频,在线视频,免费视频,自拍,视频教学,网络视频"/>
+		<meta name="Description" content="上传你的视频，观看海量视频节目。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。"/>
+		<link type="text/css" href="{{domain}}/static/css/g.css" rel="stylesheet" />
+		<link type="text/css" href="{{domain}}/static/css/jquery-ui-1.10.0.custom.min.css" rel="stylesheet"/>		
+		<link type="text/css" href="{{domain}}/static/css/v.css" rel="stylesheet"/>
+
+	</head>
+	<body>
+		<!--顶部导航 -->
+		%include header domain=domain
+		<input type="hidden" name="domainval" id="domainval" value="{{domain}}"/>
+		<!--页面主体 -->
+		<div class="fr">
+			<div class="upload-box">				
+				<div id="setp-1">
+					<div class="follow">
+						<div class="f1"></div>
+					</div>
+					<div class="from">
+						<div class="file-up">
+							<h2>选择上传文件：</h2>
+							<input type="hidden" value="http://10.151.20.49:9090" id="domain"/>
+							<input type="hidden" value="" id="itemcode"/>
+							
+							<div class="upload">
+								<div id="progressbar" class="progressbar"></div>
+								<input type='text' id='filepath' class="up-text" value="最大支持2G视频" />
+								<div id="swfu-placeholder"></div>								
+							</div>
+
+							<p>
+								当您的内容上传到G客G拍官网时，表示您已经阅读并同意遵守G客网
+							</p>
+							<a href="#">用户上传内容版权使用协议</a>
+
+						</div>
+					</div>
+				</div>
+				
+				<div id="setp-2" style="display: none;">
+					<div class="follow">
+						<div class="f2"></div>
+					</div>
+					<div class="from">
+						<h3>上传完成，请保存您的视频信息。</h3>
+
+						<form id="frmUpload" class="frm_upload" target="ifmUpload" method="post" enctype="multipart/form-data" action="">
+							<table cellspacing="0">
+								<tbody>
+									<tr>
+										<th>标题：</th>
+										<td>
+										<input type="text" class="text" id="title">
+										</td>
+									</tr>
+									<tr>
+										<th>简介：</th>
+										<td><textarea class="desc" id="comments"> </textarea></td>
+									</tr>
+									<tr>
+										<th>分类：</th>
+										<td>
+											%for type in typelist:
+											<label>
+												<input type="radio" name="videotype" class="g-type" value="{{type[0]}}">
+											{{type[1]}}
+											</label>
+											%end
+										</td>
+									</tr>
+									<tr>
+										<th>标签：</th>
+										<td>
+										<input type="text" class="text txt2" id="tags">
+										</td>
+									</tr>
+									<tr>
+										<th> &nbsp;</th>
+										<td>
+										<input type="button" class="btn-ipt" value="保存" id="uploadbtn" />
+										</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!--底部导航 -->
+		%include footer domain=domain
+
+
+		<script src="{{domain}}/static/js/tuilib2.js"></script>
+		<script src="{{domain}}/static/js/jquery-ui-1.10.0.custom.min.js"></script>
+		<script src="{{domain}}/static/js/v.js"></script>
+
+		<script src="{{domain}}/static/js/swfupload.js"></script>
+		<script src="{{domain}}/static/js/upload.js"></script>
+		<script type="text/javascript" src="{{domain}}/static/js/ulogin.js"></script>
+	</body>
+</html>

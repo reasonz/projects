@@ -1,0 +1,159 @@
+﻿
+/* ##### Top level items #####*/
+
+div.menuAcdn 
+{
+    /* Note about height: Change it to "height:auto;" if flexible height is prefered. 
+    It is recommended to specify a fixed height as it is more user-friendly. 
+    If the height specified is insufficient than needed, it will be automatically converted to "height:auto". */
+    height: 300px;
+    width: 240px;
+}
+
+
+div.menuAcdn ul.top
+{
+	padding-left:0;
+    background: #ffffff;
+    border:1px solid #dce0e3;
+    padding-bottom:1px;
+}
+
+div.menuAcdn div.heading, div.menuAcdn a.link
+{
+    padding:8px; padding-left:24px;
+    text-align:left;
+    font:normal 12px Verdana;
+    color:#FFF; 
+    background: #b5c7d9;
+    text-decoration:none;
+    border:1px solid #b8c0c8;
+    border-bottom:none;
+    outline:none;
+}
+
+div.menuAcdn div.current, div.menuAcdn div:hover, div.menuAcdn a.link:hover, div.menuAcdn div.current a.link
+{
+    color:#FFF;
+    font-weight:normal;
+    text-decoration:none;  
+    background: #739dc7;
+}
+
+/*Top level link without children*/
+div.menuAcdn a.current, div.menuAcdn a.current:hover
+{
+    color:#FFF;
+    text-decoration:underline;   
+}
+
+/* arrow image for the top headings */
+div.menuAcdn div.arrowImage {
+    width:12px;
+    height:12px;
+    top:9px;
+    left:4px; /* Changing it to "right:4px;" will position the arrow image to the right */
+    background-image:url('../../static/image/arrows.gif');
+    background-position:0 0;
+}
+
+div.menuAcdn div.current div.arrowImage {
+    background-position:0 -12px;
+}
+
+div.menuAcdn div.separator
+{
+    border-top:none;
+    border-bottom:none; 
+}
+
+
+/* ##### Sub level items #####*/
+div.menuAcdn ul.sub
+{
+	padding-left:14px; /*This determines the hierarchical offset*/ 
+}
+
+div.menuAcdn ul.sub div.heading
+{
+    text-align:left;
+    font:normal 12px Arial;
+    padding:5px; padding-left:20px;
+    color:#000;
+    background:none; 
+    border:none;
+}
+div.menuAcdn ul.sub div.heading a
+{
+    color:#000;
+}
+
+div.menuAcdn ul.sub div.current
+{
+    color:#000;
+    background:none; 
+}
+
+div.menuAcdn ul.sub a.link
+{
+    font:normal 11px Arial;
+    color:#000;
+    padding:5px; padding-left:20px;
+    text-decoration:none;
+    background:none; 
+    border:none;
+}
+
+div.menuAcdn ul.sub a.link:hover, div.menuAcdn ul.sub a.current, div.menuAcdn ul.sub div.heading a:hover, div.menuAcdn ul.sub div.heading a.current
+{
+    color:#000;
+    text-decoration:underline;
+    background:none; 
+}
+
+
+div.menuAcdn ul.sub div.arrowImage {
+    width:12px;
+    height:12px;
+    top:6px;
+    left:4px;
+    background-image:url('../../static/image/arrows.gif');
+    background-position:0 -24px;
+}
+div.menuAcdn ul.sub div.current div.arrowImage {
+    background-position:0 -36px;
+}
+
+
+
+/* ##### Followings usually don't need modification ###### */
+/*Hack the font-size:0 bug for IE6 */
+div.menuAcdn,  div.menuAcdn ul
+{
+    display:block;
+    font-size:0px;
+    line-height:0px;
+}
+div.menuAcdn li {font-size:12px; line-height:16px;}
+div.menuAcdn:after {content:'.';height:0;clear:both;display:block;visibility:hidden;} 
+
+/*Hack for IE6 again*/
+div.menuAcdn ul, div.menuAcdn li, div.menuAcdn div.heading, div.menuAcdn a.smLink, div.menuAcdn div.description {_zoom:1;}
+div.menuAcdn li {_float:left;_width:100%;}
+
+div.menuAcdn ul
+{
+	position:relative;/*!*/
+	overflow:hidden;
+	padding:0;margin:0;list-style-type: none;padding-left:10px;
+}
+div.menuAcdn li {padding:0;margin:0;}
+
+div.menuAcdn div.heading, div.menuAcdn div.current
+{
+	position:relative;
+    cursor: pointer;
+}
+div.menuAcdn div.arrowImage {position:absolute; overflow:hidden;}
+/*div.menuAcdn a.link {display: block;} MOVED TO JS*/
+

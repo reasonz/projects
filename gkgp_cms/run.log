@@ -1,0 +1,796 @@
+python: can't open file 'star.py': [Errno 2] No such file or directory
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 13:26:32] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 13:26:35] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 13:26:42] "POST /index/login HTTP/1.0" 200 9806
+localhost - - [10/Jan/2013 13:26:43] "GET /index/welcome?r=38307 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 13:26:44] "GET /option/usermanage?r=38307 HTTP/1.0" 200 4908
+localhost - - [10/Jan/2013 13:26:45] "GET /static/css/old/data.css HTTP/1.0" 200 0
+localhost - - [10/Jan/2013 13:26:46] "GET /static/js/option/option.js HTTP/1.0" 200 3922
+localhost - - [10/Jan/2013 13:26:58] "POST /option/adduser HTTP/1.0" 302 0
+localhost - - [10/Jan/2013 13:26:59] "GET /option/usermanage HTTP/1.0" 200 5173
+localhost - - [10/Jan/2013 13:27:01] "GET /option/powermanage?r=38307 HTTP/1.0" 200 7022
+localhost - - [10/Jan/2013 13:27:03] "GET /option/getpower/5?_=1357797416555 HTTP/1.0" 200 2
+localhost - - [10/Jan/2013 13:27:24] "GET /option/setpower/5/5,6,7,8,10,11,12,13,14,15,?_=1357797436995 HTTP/1.0" 200 0
+localhost - - [10/Jan/2013 13:27:24] "GET /static/css/redmond/images/ui-bg_inset-hard_100_fcfdfd_1x100.png HTTP/1.0" 200 88
+localhost - - [10/Jan/2013 13:27:24] "GET /static/css/redmond/images/ui-icons_469bdd_256x240.png HTTP/1.0" 200 4379
+localhost - - [10/Jan/2013 13:27:24] "GET /static/css/redmond/images/ui-bg_flat_0_aaaaaa_40x100.png HTTP/1.0" 200 180
+localhost - - [10/Jan/2013 13:27:24] "GET /static/css/redmond/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png HTTP/1.0" 200 3457
+localhost - - [10/Jan/2013 13:27:24] "GET /static/css/redmond/images/ui-icons_d8e7f3_256x240.png HTTP/1.0" 200 4379
+localhost - - [10/Jan/2013 13:27:25] "GET /static/css/redmond/images/ui-bg_glass_75_d0e5f5_1x400.png HTTP/1.0" 200 124
+localhost - - [10/Jan/2013 13:27:25] "GET /static/css/redmond/images/ui-icons_217bc0_256x240.png HTTP/1.0" 200 4379
+localhost - - [10/Jan/2013 13:27:32] "GET /index/home HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 13:27:33] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 13:27:36] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 13:27:40] "GET /index/welcome?r=97496 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 13:28:17] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 13:28:18] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 200 5740
+localhost - - [10/Jan/2013 13:28:18] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 200 27716
+localhost - - [10/Jan/2013 13:28:18] "GET /static/css/classic/charisma-app.css HTTP/1.0" 200 11027
+localhost - - [10/Jan/2013 13:28:18] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 200 99891
+localhost - - [10/Jan/2013 13:28:18] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 200 2178
+localhost - - [10/Jan/2013 13:28:18] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 13:28:20] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 200 70742
+localhost - - [10/Jan/2013 13:28:20] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 13:28:20] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 200 8225
+localhost - - [10/Jan/2013 13:28:54] "GET /static/image/img/glyphicons-halflings.png HTTP/1.0" 200 13826
+localhost - - [10/Jan/2013 13:28:54] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 13:29:13] "POST /index/login HTTP/1.0" 200 8547
+localhost - - [10/Jan/2013 13:29:13] "GET /static/css/classic/opa-icons.css HTTP/1.0" 200 39868
+localhost - - [10/Jan/2013 13:29:13] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 200 2728
+localhost - - [10/Jan/2013 13:29:13] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 200 486
+localhost - - [10/Jan/2013 13:29:13] "GET /static/image/img/logo20.png HTTP/1.0" 200 1091
+localhost - - [10/Jan/2013 13:29:17] "GET /index/welcome?r=35921 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 13:29:32] "GET /template/setting?r=35921 HTTP/1.0" 200 21648
+localhost - - [10/Jan/2013 13:29:33] "GET /static/js/bootstrap/bootstrap-alert.js HTTP/1.0" 200 2392
+localhost - - [10/Jan/2013 13:29:33] "GET /static/js/bootstrap/bootstrap-tab.js HTTP/1.0" 200 3384
+localhost - - [10/Jan/2013 13:29:33] "GET /static/js/template/template.js HTTP/1.0" 200 145
+localhost - - [10/Jan/2013 13:29:45] "GET /channel/getitems?r=35921 HTTP/1.0" 200 13933
+localhost - - [10/Jan/2013 13:29:48] "GET /static/js/channel/channel.js HTTP/1.0" 200 1541
+localhost - - [10/Jan/2013 13:30:13] "GET /video/getitems?r=35921 HTTP/1.0" 200 10773
+localhost - - [10/Jan/2013 13:30:13] "GET /static/js/bootstrap/bootstrap-modal.js HTTP/1.0" 200 5677
+localhost - - [10/Jan/2013 13:30:13] "GET /static/js/video/video.js HTTP/1.0" 200 2897
+localhost - - [10/Jan/2013 13:30:18] "GET /static/js/jPaginate/images/sprevious.png HTTP/1.0" 200 3128
+localhost - - [10/Jan/2013 13:30:18] "GET /static/js/jPaginate/images/snext.png HTTP/1.0" 200 3121
+localhost - - [10/Jan/2013 13:30:21] "GET /video/getitems?page=2 HTTP/1.0" 200 10742
+localhost - - [10/Jan/2013 14:12:55] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 14:14:06] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 200 8225
+localhost - - [10/Jan/2013 14:14:06] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 14:14:10] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 14:14:10] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 200 70742
+localhost - - [10/Jan/2013 14:14:16] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 14:14:18] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 15:04:28] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 15:04:29] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 200 5740
+localhost - - [10/Jan/2013 15:04:29] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 200 27716
+localhost - - [10/Jan/2013 15:04:29] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 200 99891
+localhost - - [10/Jan/2013 15:04:29] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 200 2178
+localhost - - [10/Jan/2013 15:04:29] "GET /static/css/classic/charisma-app.css HTTP/1.0" 200 11027
+localhost - - [10/Jan/2013 15:04:29] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 15:04:30] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 15:04:30] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 200 70742
+localhost - - [10/Jan/2013 15:04:31] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 200 8225
+localhost - - [10/Jan/2013 15:07:59] "GET /channel/gotochannel?cid=5&r=35921 HTTP/1.0" 200 4843
+localhost - - [10/Jan/2013 15:08:00] "GET /static/js/subchannel/subchannel.js HTTP/1.0" 200 1014
+localhost - - [10/Jan/2013 15:08:07] "GET /video/getitems?r=35921 HTTP/1.0" 200 10773
+localhost - - [10/Jan/2013 15:09:15] "GET /video/ishaveitem?ids=21_22_24_&channelid=5 HTTP/1.0" 200 4
+localhost - - [10/Jan/2013 15:09:15] "GET /video/changechannel?ids=21_22_24_&channelid=5&ignore=0 HTTP/1.0" 200 2
+localhost - - [10/Jan/2013 15:09:28] "GET /channel/getitems?r=35921 HTTP/1.0" 200 13933
+localhost - - [10/Jan/2013 15:09:45] "GET /channel/gotochannel?cid=9&r=35921 HTTP/1.0" 200 4843
+localhost - - [10/Jan/2013 15:09:47] "GET /channel/gotochannel?cid=5&r=35921 HTTP/1.0" 200 5947
+localhost - - [10/Jan/2013 15:09:51] "GET /video/getitems?r=35921 HTTP/1.0" 200 10773
+localhost - - [10/Jan/2013 15:09:58] "GET /static/image/img/glyphicons-halflings.png HTTP/1.0" 200 13826
+localhost - - [10/Jan/2013 15:09:58] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 15:09:58] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 15:10:13] "GET /video/ishaveitem?ids=25_27_28_29_30_&channelid=9 HTTP/1.0" 200 4
+localhost - - [10/Jan/2013 15:10:13] "GET /video/changechannel?ids=25_27_28_29_30_&channelid=9&ignore=0 HTTP/1.0" 200 2
+localhost - - [10/Jan/2013 15:10:27] "GET /video/ishaveitem?ids=23_25_26_27_28_29_30_&channelid=6 HTTP/1.0" 200 4
+localhost - - [10/Jan/2013 15:10:27] "GET /video/changechannel?ids=23_25_26_27_28_29_30_&channelid=6&ignore=0 HTTP/1.0" 200 2
+localhost - - [10/Jan/2013 15:10:30] "GET /video/getitems?page=2 HTTP/1.0" 200 10742
+localhost - - [10/Jan/2013 15:11:03] "GET /video/ishaveitem?ids=36_37_&channelid=8 HTTP/1.0" 200 4
+localhost - - [10/Jan/2013 15:11:03] "GET /video/changechannel?ids=36_37_&channelid=8&ignore=0 HTTP/1.0" 200 2
+localhost - - [10/Jan/2013 15:11:32] "GET /video/ishaveitem?ids=31_32_33_34_35_39_40_&channelid=11 HTTP/1.0" 200 4
+localhost - - [10/Jan/2013 15:11:32] "GET /video/changechannel?ids=31_32_33_34_35_39_40_&channelid=11&ignore=0 HTTP/1.0" 200 2
+localhost - - [10/Jan/2013 15:11:46] "GET /channel/getitems?r=35921 HTTP/1.0" 200 13933
+localhost - - [10/Jan/2013 15:11:48] "GET /channel/gotochannel?cid=9&r=35921 HTTP/1.0" 200 6658
+localhost - - [10/Jan/2013 15:11:50] "GET /channel/gotochannel?cid=4&r=35921 HTTP/1.0" 200 4843
+localhost - - [10/Jan/2013 15:11:51] "GET /channel/gotochannel?cid=6&r=35921 HTTP/1.0" 200 7395
+localhost - - [10/Jan/2013 15:12:39] "GET /video/getitems?r=97496 HTTP/1.0" 200 10773
+localhost - - [10/Jan/2013 15:12:40] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:40] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:40] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:40] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 200 2178
+localhost - - [10/Jan/2013 15:12:40] "GET /static/css/classic/charisma-app.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:40] "GET /static/js/bootstrap/bootstrap-alert.js HTTP/1.0" 200 2392
+localhost - - [10/Jan/2013 15:12:40] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:40] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:40] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:40] "GET /static/js/bootstrap/bootstrap-modal.js HTTP/1.0" 200 5677
+localhost - - [10/Jan/2013 15:12:40] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:41] "GET /static/js/video/video.js HTTP/1.0" 200 2897
+localhost - - [10/Jan/2013 15:12:41] "GET /static/js/jPaginate/images/sprevious.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:12:41] "GET /static/js/jPaginate/images/snext.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 15:22:22] "POST /index/login HTTP/1.0" 200 8547
+localhost - - [10/Jan/2013 15:22:26] "GET /static/css/classic/opa-icons.css HTTP/1.0" 200 39868
+localhost - - [10/Jan/2013 15:22:26] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 206 74661
+localhost - - [10/Jan/2013 15:22:26] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 200 2728
+localhost - - [10/Jan/2013 15:22:29] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 200 486
+localhost - - [10/Jan/2013 15:22:32] "GET /static/image/img/logo20.png HTTP/1.0" 200 1091
+localhost - - [10/Jan/2013 15:22:54] "GET /index/welcome?r=86622 HTTP/1.0" 200 484
+/home/tdwl/pyserver/cms
+5
+0 10
+10
+10 20
+10
+5 0 10
+0 10
+10
+add 21 
+add 22 
+add 24 
+9 0 10
+5 0 10
+0 10
+10
+add 25 
+add 27 
+add 28 
+add 29 
+add 30 
+add 23 
+add 25 
+add 26 
+add 27 
+add 28 
+add 29 
+add 30 
+10 20
+10
+add 36 
+add 37 
+add 31 
+add 32 
+add 33 
+add 34 
+add 35 
+add 39 
+add 40 
+9 0 10
+4 0 10
+6 0 10
+0 10
+10
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 16:29:20] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 16:29:20] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:20] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:20] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:20] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:20] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 200 2728
+localhost - - [10/Jan/2013 16:29:20] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 200 486
+localhost - - [10/Jan/2013 16:29:20] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:20] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:21] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:21] "GET /static/image/img/glyphicons-halflings.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:21] "GET /index/welcome?r=8577 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 16:29:22] "GET /video/getitems?r=8577 HTTP/1.0" 200 11642
+localhost - - [10/Jan/2013 16:29:22] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:22] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:22] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:22] "GET /static/css/classic/charisma-app.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:22] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:22] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 16:29:22] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+/home/tdwl/pyserver/cms
+0 10
+10
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 16:39:09] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:39:23] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:39:48] "GET /video/ishaveitem?ids=21_22_&channelid=5 HTTP/1.0" 200 5
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/module/video.py", line 117, in changechannel
+    insert_item(conn,c,id,channelid)
+  File "/home/tdwl/pyserver/cms/module/video.py", line 133, in insert_item
+    c.execute(insert_sql,(contentid,id,channelid,title,cpid,picurl))
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 184, in execute
+    query = query % db.literal(args)
+TypeError: not all arguments converted during string formatting
+localhost - - [10/Jan/2013 16:39:50] "GET /video/changechannel?ids=21_22_&channelid=5&ignore=0 HTTP/1.0" 500 798
+localhost - - [10/Jan/2013 16:39:53] "GET /channel/gotochannel?cid=5&r=8577 HTTP/1.0" 200 5575
+localhost - - [10/Jan/2013 16:39:54] "GET /static/js/subchannel/subchannel.js HTTP/1.0" 200 1014
+/home/tdwl/pyserver/cms
+0 10
+10
+0 10
+10
+5 0 10
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 16:42:01] "GET /channel/gotochannel?cid=5&r=8577 HTTP/1.0" 200 5816
+localhost - - [10/Jan/2013 16:42:49] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:43:33] "GET /channel/gotochannel?cid=5&r=8577 HTTP/1.0" 200 5816
+localhost - - [10/Jan/2013 16:43:44] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:43:52] "GET /video/ishaveitem?ids=21_22_&channelid=5 HTTP/1.0" 200 5
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/module/video.py", line 117, in changechannel
+    insert_item(conn,c,id,channelid)
+  File "/home/tdwl/pyserver/cms/module/video.py", line 133, in insert_item
+    c.execute(insert_sql,(contentid,id,channelid,title,cpid,picurl))
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 184, in execute
+    query = query % db.literal(args)
+TypeError: not all arguments converted during string formatting
+localhost - - [10/Jan/2013 16:43:54] "GET /video/changechannel?ids=21_22_&channelid=5&ignore=0 HTTP/1.0" 500 798
+localhost - - [10/Jan/2013 16:44:05] "GET /channel/gotochannel?cid=5&r=8577 HTTP/1.0" 200 5816
+/home/tdwl/pyserver/cms
+5 0 10
+0 10
+10
+5 0 10
+0 10
+10
+5 0 10
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 16:45:41] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:45:48] "GET /video/ishaveitem?ids=21_22_&channelid=5 HTTP/1.0" 200 5
+localhost - - [10/Jan/2013 16:45:50] "GET /video/changechannel?ids=21_22_&channelid=5&ignore=0 HTTP/1.0" 200 2
+localhost - - [10/Jan/2013 16:45:53] "GET /channel/gotochannel?cid=5&r=8577 HTTP/1.0" 200 6347
+localhost - - [10/Jan/2013 16:45:53] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 16:45:53] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 200 5740
+localhost - - [10/Jan/2013 16:45:54] "GET /static/css/classic/charisma-app.css HTTP/1.0" 200 11027
+localhost - - [10/Jan/2013 16:45:54] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 200 2178
+localhost - - [10/Jan/2013 16:45:54] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 16:45:54] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 200 27716
+localhost - - [10/Jan/2013 16:45:54] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 200 99891
+localhost - - [10/Jan/2013 16:45:55] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 16:45:57] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 200 70742
+localhost - - [10/Jan/2013 16:45:57] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 200 8225
+localhost - - [10/Jan/2013 16:46:02] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:46:12] "GET /channel/gotochannel?cid=5&r=8577 HTTP/1.0" 200 6347
+localhost - - [10/Jan/2013 16:46:13] "GET /channel/gotochannel?cid=9&r=8577 HTTP/1.0" 200 7172
+localhost - - [10/Jan/2013 16:46:17] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:46:18] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 16:46:22] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 200 5740
+localhost - - [10/Jan/2013 16:46:22] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 200 27716
+localhost - - [10/Jan/2013 16:46:22] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 200 99891
+localhost - - [10/Jan/2013 16:46:22] "GET /static/css/classic/charisma-app.css HTTP/1.0" 200 11027
+localhost - - [10/Jan/2013 16:46:22] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 200 2178
+localhost - - [10/Jan/2013 16:46:22] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 16:46:22] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 16:46:23] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 200 70742
+localhost - - [10/Jan/2013 16:46:25] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 200 8225
+localhost - - [10/Jan/2013 16:47:19] "GET /channel/getitems?r=8577 HTTP/1.0" 200 13933
+localhost - - [10/Jan/2013 16:47:19] "GET /static/js/channel/channel.js HTTP/1.0" 200 1541
+localhost - - [10/Jan/2013 16:47:24] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 16:47:35] "GET /template/setting?r=8577 HTTP/1.0" 200 21648
+localhost - - [10/Jan/2013 16:47:35] "GET /static/js/bootstrap/bootstrap-tab.js HTTP/1.0" 200 3384
+localhost - - [10/Jan/2013 16:47:36] "GET /static/js/template/template.js HTTP/1.0" 200 145
+localhost - - [10/Jan/2013 16:47:44] "GET /channel/getitems?r=8577 HTTP/1.0" 200 13933
+localhost - - [10/Jan/2013 16:47:52] "GET /video/getitems?r=8577 HTTP/1.0" 200 12042
+localhost - - [10/Jan/2013 17:02:19] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 17:02:20] "GET /static/image/img/glyphicons-halflings.png HTTP/1.0" 200 13826
+localhost - - [10/Jan/2013 17:02:20] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 17:02:20] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 206 14379
+localhost - - [10/Jan/2013 17:02:27] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 17:02:28] "GET /static/css/classic/opa-icons.css HTTP/1.0" 200 39868
+localhost - - [10/Jan/2013 17:02:28] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 200 2728
+localhost - - [10/Jan/2013 17:02:28] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 200 486
+localhost - - [10/Jan/2013 17:02:28] "GET /static/image/img/logo20.png HTTP/1.0" 200 1091
+localhost - - [10/Jan/2013 17:02:33] "GET /index/welcome?r=5928 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 17:02:46] "GET /channel/gotochannel?cid=5&r=5928 HTTP/1.0" 200 6347
+localhost - - [10/Jan/2013 17:02:47] "GET /static/js/bootstrap/bootstrap-alert.js HTTP/1.0" 200 2392
+localhost - - [10/Jan/2013 17:02:47] "GET /static/js/bootstrap/bootstrap-modal.js HTTP/1.0" 200 5677
+localhost - - [10/Jan/2013 17:02:47] "GET /static/js/subchannel/subchannel.js HTTP/1.0" 200 1014
+localhost - - [10/Jan/2013 17:02:48] "GET /static/js/jPaginate/images/sprevious.png HTTP/1.0" 200 3128
+localhost - - [10/Jan/2013 17:02:48] "GET /static/js/jPaginate/images/snext.png HTTP/1.0" 200 3121
+localhost - - [10/Jan/2013 17:02:50] "GET /channel/gotochannel?cid=9&r=5928 HTTP/1.0" 200 7172
+localhost - - [10/Jan/2013 17:02:51] "GET /static/js/jPaginate/images/sprevious.png HTTP/1.0" 200 3128
+localhost - - [10/Jan/2013 17:02:51] "GET /channel/gotochannel?cid=4&r=5928 HTTP/1.0" 200 4902
+localhost - - [10/Jan/2013 17:02:57] "GET /channel/gotochannel?cid=9&r=5928 HTTP/1.0" 200 7172
+localhost - - [10/Jan/2013 17:03:02] "GET /channel/gotochannel?cid=6&r=5928 HTTP/1.0" 200 8091
+/home/tdwl/pyserver/cms
+0 10
+10
+add 21 
+add 22 
+5 0 10
+0 10
+10
+5 0 10
+9 0 10
+0 10
+10
+0 10
+10
+0 10
+10
+5 0 10
+9 0 10
+4 0 10
+9 0 10
+6 0 10
+/home/tdwl/pyserver/cms
+Traceback (most recent call last):
+  File "start.py", line 3, in <module>
+    from module import app
+  File "/home/tdwl/pyserver/cms/module/__init__.py", line 3, in <module>
+    import index,option,video,channel,notice,template
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 172
+    
+    ^
+SyntaxError: invalid syntax
+/home/tdwl/pyserver/cms
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 154, in gotoedit
+    p = db.query_list(sql,(video[3]))
+  File "/home/tdwl/pyserver/cms/module/dbsetting.py", line 20, in query_list
+    c.execute(sql,params)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1")
+localhost - - [10/Jan/2013 17:56:11] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 761
+/home/tdwl/pyserver/cms
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 154, in gotoedit
+    p = db.query_list(sql,(video[3]))
+  File "/home/tdwl/pyserver/cms/module/dbsetting.py", line 20, in query_list
+    c.execute(sql,params)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1")
+localhost - - [10/Jan/2013 17:56:57] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 761
+/home/tdwl/pyserver/cms
+(75L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+/home/tdwl/pyserver/cms
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 154, in gotoedit
+    p = db.query_list(sql,(video[0]))
+  File "/home/tdwl/pyserver/cms/module/dbsetting.py", line 20, in query_list
+    c.execute(sql,params)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 't.item_id' in 'field list'")
+localhost - - [10/Jan/2013 17:58:13] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 761
+/home/tdwl/pyserver/cms
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 154, in gotoedit
+    p = db.query_list(sql,(video[0]))
+  File "/home/tdwl/pyserver/cms/module/dbsetting.py", line 20, in query_list
+    c.execute(sql,params)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 't.product_id' in 'field list'")
+localhost - - [10/Jan/2013 17:59:31] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 761
+/home/tdwl/pyserver/cms
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 154, in gotoedit
+    p = db.query_list(sql,(video[0]))
+  File "/home/tdwl/pyserver/cms/module/dbsetting.py", line 20, in query_list
+    c.execute(sql,params)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1052, "Column 'id' in where clause is ambiguous")
+localhost - - [10/Jan/2013 17:59:58] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 761
+/home/tdwl/pyserver/cms
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 166, in gotoedit
+    allproductlist = db.query_list(sql,(cpidsql))
+  File "/home/tdwl/pyserver/cms/module/dbsetting.py", line 20, in query_list
+    c.execute(sql,params)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'exist ('42566')' at line 1")
+localhost - - [10/Jan/2013 18:00:39] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 761
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 166, in gotoedit
+    allproductlist = db.query_list(sql,(cpidsql))
+  File "/home/tdwl/pyserver/cms/module/dbsetting.py", line 20, in query_list
+    c.execute(sql,params)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/python27/lib/python2.7/site-packages/MySQL_python-1.2.4b4-py2.7-linux-x86_64.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'exist ('42566')' at line 1")
+localhost - - [10/Jan/2013 18:01:04] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 761
+/home/tdwl/pyserver/cms
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+42566
+42566
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+42566
+42566
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 18:03:23] "GET /channel/gotoedit?id=22 HTTP/1.0" 500 790
+/home/tdwl/pyserver/cms
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+42566
+42566
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 18:04:44] "GET /channel/gotoedit?id=22 HTTP/1.0" 200 4895
+localhost - - [10/Jan/2013 18:04:44] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:04:44] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /channel/gotoedit?id=22 HTTP/1.0" 200 4895
+localhost - - [10/Jan/2013 18:05:08] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/css/classic/charisma-app.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:05:08] "GET /static/js/channel/channel.js HTTP/1.0" 304 0
+/home/tdwl/pyserver/cms
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+42566
+42566
+(22L, None, u'/images/2013/1/1357718463476_8l4lq.jpg', None, 0L, u'\u623f\u7956\u540d\u81ea\u66dd\u4e0d\u7231\u6027\u611f\u5973')
+42566
+42566
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/usr/local/python27/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/local/python27/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/usr/local/python27/lib/python2.7/wsgiref/handlers.py", line 210, in write
+    self.send_headers()
+  File "/usr/local/python27/lib/python2.7/wsgiref/handlers.py", line 268, in send_headers
+    self.send_preamble()
+  File "/usr/local/python27/lib/python2.7/wsgiref/handlers.py", line 192, in send_preamble
+    'Date: %s\r\n' % format_date_time(time.time())
+  File "/usr/local/python27/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/local/python27/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/local/python27/lib/python2.7/SocketServer.py", line 284, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/local/python27/lib/python2.7/SocketServer.py", line 310, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/local/python27/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/python27/lib/python2.7/SocketServer.py", line 640, in __init__
+    self.finish()
+  File "/usr/local/python27/lib/python2.7/SocketServer.py", line 693, in finish
+    self.wfile.flush()
+  File "/usr/local/python27/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+localhost - - [10/Jan/2013 18:07:35] "GET /index/welcome?r=52520 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 18:07:36] "GET /video/getitems?r=52520 HTTP/1.0" 200 12662
+localhost - - [10/Jan/2013 18:07:36] "GET /static/js/bootstrap/bootstrap-alert.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:07:36] "GET /static/js/bootstrap/bootstrap-modal.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:07:36] "GET /static/js/video/video.js HTTP/1.0" 304 0
+/home/tdwl/pyserver/cms
+0 10
+10
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 58312)
+----------------------------------------
+0 10
+10
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 18:08:46] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 18:08:47] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:47] "GET /index/welcome?r=75387 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 18:08:48] "GET /channel/gotochannel?cid=5&r=75387 HTTP/1.0" 200 6533
+localhost - - [10/Jan/2013 18:08:48] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/css/classic/charisma-app.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:48] "GET /static/js/bootstrap/bootstrap-alert.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:49] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:49] "GET /static/js/bootstrap/bootstrap-modal.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:08:49] "GET /static/js/subchannel/subchannel.js HTTP/1.0" 304 0
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3121, in wrapper
+    result = func(*args, **kwargs)
+  File "/home/tdwl/pyserver/cms/module/channel.py", line 154, in gotoedit
+    p = db.query_list(sql,(video[0]))
+TypeError: 'NoneType' object has no attribute '__getitem__'
+localhost - - [10/Jan/2013 18:09:44] "GET /channel/gotoedit?id=74 HTTP/1.0" 500 761
+/home/tdwl/pyserver/cms
+5 0 10
+None
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 18:11:48] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 18:11:48] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:48] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:48] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:48] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:48] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:48] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:48] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:48] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:49] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:11:49] "GET /index/welcome?r=62935 HTTP/1.0" 200 484
+Traceback (most recent call last):
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 782, in _handle
+    return route.call(**args)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 1570, in wrapper
+    rv = callback(*a, **ka)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3125, in wrapper
+    return template(tpl_name, **tplvars)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3100, in template
+    return TEMPLATES[tpl].render(kwargs)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3074, in render
+    self.execute(stdout, kwargs)
+  File "/home/tdwl/pyserver/cms/lib/bottle.py", line 3062, in execute
+    eval(self.co, env)
+  File "/home/tdwl/pyserver/cms/views/channel/subchannel.html", line 89, in <module>
+    <td><a herf="{{domain}}/channel/gotoedit?id={{one[5]}}">{{one[1]}}</a></td>
+IndexError: tuple index out of range
+localhost - - [10/Jan/2013 18:11:51] "GET /channel/gotochannel?cid=9&r=62935 HTTP/1.0" 500 776
+/home/tdwl/pyserver/cms
+9 0 10
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 18:12:12] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 18:12:12] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:12] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:12] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:12] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:13] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:13] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:13] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:13] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:13] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:12:13] "GET /index/welcome?r=28111 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 18:12:14] "GET /channel/gotochannel?cid=9&r=28111 HTTP/1.0" 200 7482
+localhost - - [10/Jan/2013 18:12:14] "GET /channel/gotochannel?cid=9&r=28111 HTTP/1.0" 200 7482
+localhost - - [10/Jan/2013 18:12:36] "GET /channel/gotoedit?id=30 HTTP/1.0" 200 4830
+localhost - - [10/Jan/2013 18:16:18] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 18:16:18] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:18] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:18] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:18] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:18] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:18] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:18] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:18] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:19] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:19] "GET /index/welcome?r=65881 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 18:16:25] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 18:16:25] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:25] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:25] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:25] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:25] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:46] "POST /index/login HTTP/1.0" 200 8545
+localhost - - [10/Jan/2013 18:16:47] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:47] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:47] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:47] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:16:47] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:17:03] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 18:17:04] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 18:17:07] "POST /index/login HTTP/1.0" 200 9806
+/home/tdwl/pyserver/cms
+9 0 10
+9 0 10
+(30L, None, None, None, 0L, u'\u6597\u725b\u58eb\u4fe1\u8a93\u65e6\u65e6\u84c4\u52bf\u5f85\u53d1')
+42566
+42566
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 18:18:32] "POST /index/login HTTP/1.0" 200 9806
+localhost - - [10/Jan/2013 18:18:34] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:18:34] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:18:34] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:18:34] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:18:34] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:18:48] "GET /index/login HTTP/1.0" 200 3363
+localhost - - [10/Jan/2013 18:18:49] "GET /static/image/img/glyphicons-halflings.png HTTP/1.0" 200 13826
+localhost - - [10/Jan/2013 18:18:50] "GET /index/img/favicon.ico HTTP/1.0" 404 754
+localhost - - [10/Jan/2013 18:18:50] "POST /index/login HTTP/1.0" 200 9806
+localhost - - [10/Jan/2013 18:18:51] "GET /static/css/classic/opa-icons.css HTTP/1.0" 200 39868
+localhost - - [10/Jan/2013 18:18:53] "GET /static/image/img/logo20.png HTTP/1.0" 200 1091
+localhost - - [10/Jan/2013 18:18:53] "GET /index/welcome?r=55188 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 18:18:55] "GET /channel/gotochannel?cid=4&r=55188 HTTP/1.0" 200 4902
+localhost - - [10/Jan/2013 18:18:55] "GET /static/js/jPaginate/images/sprevious.png HTTP/1.0" 200 3128
+localhost - - [10/Jan/2013 18:18:55] "GET /static/js/jPaginate/images/snext.png HTTP/1.0" 200 3121
+localhost - - [10/Jan/2013 18:19:01] "GET /channel/gotochannel?cid=5&r=55188 HTTP/1.0" 200 6560
+localhost - - [10/Jan/2013 18:19:05] "GET /channel/gotoedit?id=21 HTTP/1.0" 200 4907
+/home/tdwl/pyserver/cms
+4 0 10
+5 0 10
+(21L, None, u'/images/2013/1/1357716624145_zhrtj.jpg', None, 0L, u'\u623f\u7956\u540d\u73b0\u573a\u7206\u6599\u8001\u7238\u6210\u9f99\u5f88\u62a0\u95e8')
+42566
+42566
+Bottle v0.11.dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9090/
+Hit Ctrl-C to quit.
+
+localhost - - [10/Jan/2013 18:22:06] "POST /index/login HTTP/1.0" 200 9806
+localhost - - [10/Jan/2013 18:22:06] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:07] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:07] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:07] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:07] "GET /static/image/img/logo20.png HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:18] "POST /index/login HTTP/1.0" 200 9806
+localhost - - [10/Jan/2013 18:22:18] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 200 5740
+localhost - - [10/Jan/2013 18:22:18] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 200 99891
+localhost - - [10/Jan/2013 18:22:18] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 200 27716
+localhost - - [10/Jan/2013 18:22:18] "GET /static/css/classic/opa-icons.css HTTP/1.0" 200 39868
+localhost - - [10/Jan/2013 18:22:18] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 18:22:19] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 18:22:19] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 200 2728
+localhost - - [10/Jan/2013 18:22:20] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 200 486
+localhost - - [10/Jan/2013 18:22:28] "POST /index/login HTTP/1.0" 200 9806
+localhost - - [10/Jan/2013 18:22:28] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:28] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:28] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 206 1
+localhost - - [10/Jan/2013 18:22:28] "GET /static/css/classic/opa-icons.css HTTP/1.0" 304 0
+localhost - - [10/Jan/2013 18:22:28] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 206 1
+localhost - - [10/Jan/2013 18:22:28] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 206 1
+localhost - - [10/Jan/2013 18:22:28] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 206 23499
+localhost - - [10/Jan/2013 18:22:28] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 206 116853
+localhost - - [10/Jan/2013 18:22:29] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 206 2033
+localhost - - [10/Jan/2013 18:23:02] "POST /index/login HTTP/1.0" 200 9806
+localhost - - [10/Jan/2013 18:23:02] "GET /static/css/reset-fonts-grids.css HTTP/1.0" 200 5740
+localhost - - [10/Jan/2013 18:23:02] "GET /static/css/redmond/jquery-ui.css HTTP/1.0" 200 27716
+localhost - - [10/Jan/2013 18:23:02] "GET /static/css/classic/bootstrap-classic.css HTTP/1.0" 200 99891
+localhost - - [10/Jan/2013 18:23:02] "GET /static/css/classic/opa-icons.css HTTP/1.0" 200 39868
+localhost - - [10/Jan/2013 18:23:02] "GET /static/js/jquery-1.7.2.min.js HTTP/1.0" 200 94840
+localhost - - [10/Jan/2013 18:23:03] "GET /static/js/jquery-ui-1.8.21.custom.min.js HTTP/1.0" 200 206923
+localhost - - [10/Jan/2013 18:23:04] "GET /static/js/bootstrap/bootstrap-dropdown.js HTTP/1.0" 200 2728
+localhost - - [10/Jan/2013 18:23:04] "GET /static/js/bootstrap/hnsjcms.js HTTP/1.0" 200 486
+localhost - - [10/Jan/2013 18:23:27] "GET /static/image/img/logo20.png HTTP/1.0" 200 1091
+localhost - - [10/Jan/2013 18:23:27] "GET /static/image/img/glyphicons-halflings.png HTTP/1.0" 200 13826
+localhost - - [10/Jan/2013 18:23:27] "GET /index/welcome?r=85640 HTTP/1.0" 200 484
+localhost - - [10/Jan/2013 18:23:44] "GET /channel/gotochannel?cid=5&r=85640 HTTP/1.0" 200 6560
+localhost - - [10/Jan/2013 18:23:44] "GET /static/css/classic/charisma-app.css HTTP/1.0" 200 11027
+localhost - - [10/Jan/2013 18:23:44] "GET /static/js/jPaginate/css/style.css HTTP/1.0" 200 2178
+localhost - - [10/Jan/2013 18:23:44] "GET /static/js/jquery.dataTables.min.js HTTP/1.0" 200 70742
+localhost - - [10/Jan/2013 18:23:45] "GET /static/js/bootstrap/bootstrap-alert.js HTTP/1.0" 200 2392
+localhost - - [10/Jan/2013 18:23:45] "GET /static/js/bootstrap/bootstrap-modal.js HTTP/1.0" 200 5677
+localhost - - [10/Jan/2013 18:23:45] "GET /static/js/jPaginate/jquery.paginate.js HTTP/1.0" 200 8225
+localhost - - [10/Jan/2013 18:23:45] "GET /static/js/subchannel/subchannel.js HTTP/1.0" 200 1119
+localhost - - [10/Jan/2013 18:23:48] "GET /static/js/jPaginate/images/sprevious.png HTTP/1.0" 200 3128
+localhost - - [10/Jan/2013 18:23:48] "GET /static/js/jPaginate/images/snext.png HTTP/1.0" 200 3121
+localhost - - [10/Jan/2013 18:23:55] "GET /channel/gotoedit?id=21 HTTP/1.0" 200 4907

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>无线后台统计</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/data.css" type="text/css">
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/chart/highcharts.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/chart/modules/exporting.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/wlapi/wlapi_method_usetime.js"></script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="chart-option">
+                        <table style="margin-top: 3px;margin-bottom: 3px;margin-left: 15px;">
+                            <input type="hidden" id="ajaxvalue" value="{{jsonval}}"/>
+                               <input type="hidden" id="domain" value="{{domain}}"/>
+                            <tr>
+                                <td><p style="margin-left: 10px;">日期: <input type="text" id="start" size="30"/></p>
+                                </td>
+
+                                <td>
+                                    <a href="#" id="searchbtn" style="margin-left: 10px">查询</a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="yui-g">
+                    <div class="chart-div">
+                        <div id="container" style="min-width: 300px; height: 800px; "></div>
+                    </div>
+                </div>
+                <div class="yui-g" style="margin-top:550px">
+                        <div class="divtable">
+
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="5" class="tdbanner" style="background-color: #cccccc; text-align: left; "><h4 style="margin-left: 20px;"><b>接口调用详情(红色部分表示超过平均值的接口) 平均值 : {{pv_avg[1]}}ms</b></h4></td>
+                                </tr>
+                                <tr>
+                                    <td   width="20%"><strong>日期</strong></td>
+                                    <td  width="20%"><strong>接口名称</strong></td>
+                                     <td  width="20%"><strong>调用次数</strong></td>
+                                    <td  width="20%" style="background-color: #3de72b;"><strong>平均响应时间(ms)</strong></td>
+                                </tr>
+                                %for one in all:
+                                     %if float(one['usetime'])>float(pv_avg[1]):
+                                         %cc='#e74d2b'
+                                     %else:
+                                          %cc='#ffffff'
+                                      %end
+
+                                    <td style="background-color: {{cc}}">{{one['date']}}</td>
+                                    <td  style="background-color: {{cc}}">{{one['apiname']}}</td>
+                                    <td  style="background-color: {{cc}}">{{one['count']}}</td>
+                                    <td  style="background-color: {{cc}}">{{one['usetime']}}</td>
+                                </tr>
+                                %end
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

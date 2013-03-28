@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>上海联通统计</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/data.css" type="text/css">
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/chart/highcharts.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/chart/modules/exporting.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/shunion/shunion.js"></script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="chart-option">
+                        <table style="margin-top: 3px;margin-bottom: 3px;margin-left: 15px;">
+                            <input type="hidden" id="ajaxvalue" value="{{timescope[0]}}|{{timescope[1]}}|{{jsonval}}"/>
+                              <input type="hidden" id="domain" value="{{domain}}"/>
+                            <tr>
+                                <td>
+                                    <select style="width: 100px;">
+                                        <option>订购/退订</option>
+                                    </select>
+                                </td>
+                                <td><p style="margin-left: 10px;">开始: <input type="text" id="start" size="30"/></p>
+                                </td>
+                                <td><p style="margin-left: 10px;">结束: <input type="text" id="end" size="30"/></p>
+                                </td>
+                                <td>
+                                    <a href="#" id="searchbtn" style="margin-left: 10px">查询</a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="yui-g">
+                    <div class="chart-div">
+                        <div id="container" style="min-width: 300px; height: 300px; margin: 0 auto"></div>
+                    </div>
+                </div>
+                <div class="yui-g" style="margin-top:50px">
+                        <div class="divtable">
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="5" class="tdbanner" style="background-color: #cccccc; text-align: left;"><h4   style="margin-left: 20px;"><b>订购总量</b></h4></td>
+                                </tr>
+                                <tr>
+                                    <td  width="40%"><strong>日期</strong></td>
+                                   
+                                    <td width="30%"><strong>订购量</strong></td>
+                                    <td width="30%"><strong>退订量</strong></td>
+                                </tr>
+                                  <tr>
+                                    <td><strong>2012-06-08 00:00:00~~~now</strong></td>
+                                    <td><strong>{{count['dinggou']}}</strong></td>
+                                    <td><strong>{{count['tuiding']}}</strong></td>
+
+                                </tr>
+                              </table>
+
+
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="7" class="tdbanner" style="background-color: #cccccc; text-align: left;"><h4   style="margin-left: 20px;"><b>时间段内总量</b></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="10%"><strong>日期</strong></td>
+                                    <td width="10%"><strong>PV</strong></td>
+                                    <td width="10%"><strong>UV</strong></td>
+                                    <td width="10%"><strong>订购量</strong></td>
+                                    <td width="10%"><strong>退订量</strong></td>
+                                    <td width="10%"><strong>PV转化率</strong></td>
+                                    <td width="10%"><strong>UV转化率</strong></td>
+                                </tr>
+                                  <tr>
+                                    <td><strong>{{timescope[0]}} 00:00:00~~~{{timescope[1]}} 00:00:00</strong></td>
+                                    <td><strong>{{allcount['pv']}}</strong></td>
+                                    <td><strong>{{allcount['uv']}}</strong></td>
+                                    <td><strong>{{allcount['dinggou']}}</strong></td>
+                                    <td><strong>{{allcount['tuiding']}}</strong></td>
+                                       <td>{{allcount['pvconvert']}}%</td>
+                                    <td>{{allcount['uvconvert']}}%</td>
+                                </tr>
+                              </table>
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="7" class="tdbanner" style="background-color: #cccccc; text-align: left;"><h4   style="margin-left: 20px;"><b>上海联通统计详情</b></h4></td>
+                                </tr>
+                                <tr>
+                                    <td width="10%"><strong>日期</strong></td>
+                                    <td width="10%"><strong>PV</strong></td>
+                                    <td width="10%"><strong>UV</strong></td>
+                                    <td width="10%"><strong>订购量</strong></td>
+                                    <td width="10%"><strong>退订量</strong></td>
+                                    <td width="10%"><strong>PV转化率</strong></td>
+                                    <td width="10%"><strong>UV转化率</strong></td>
+                                </tr>
+                                %for one in all:
+                                <tr>
+                                    <td>{{one['date']}}</td>
+                                     <td>{{one['pv']}}</td>
+                                    <td>{{one['uv']}}</td>
+                                    <td>{{one['dinggou']}}</td>
+                                    <td>{{one['tuiding']}}</td>
+                                    <td>{{one['pvconvert']}}%</td>
+                                    <td>{{one['uvconvert']}}%</td>
+                                </tr>
+                                %end
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

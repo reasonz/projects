@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 24
+/test8899/!svn/ver/190/1
+END
+index.wsgi
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/test8899/!svn/ver/191/1/index.wsgi
+END
+mydb.py
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/test8899/!svn/ver/184/1/mydb.py
+END
+cnbeta.py
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/test8899/!svn/ver/136/1/cnbeta.py
+END
+config.yaml
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/test8899/!svn/ver/190/1/config.yaml
+END
+cnbetare.py
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/test8899/!svn/ver/187/1/cnbetare.py
+END

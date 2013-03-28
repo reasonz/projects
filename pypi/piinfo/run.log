@@ -1,0 +1,2136 @@
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352563941.73.jpeg'.
+[0m114.80.235.146 - - [10/Nov/2012 16:12:26] "GET /snap HTTP/1.1" 200 66169
+114.80.235.146 - - [10/Nov/2012 16:12:26] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352589605.58.jpeg'.
+[0m192.168.1.5 - - [10/Nov/2012 23:20:13] "GET /snap HTTP/1.1" 200 71033
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352589614.08.jpeg'.
+[0mTraceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 215, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 284, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 310, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 640, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 693, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352589636.51.jpeg'.
+[0mTraceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 215, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 284, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 310, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 640, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 693, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352589703.19.jpeg'.
+[0m192.168.1.5 - - [10/Nov/2012 23:21:46] "GET /snap HTTP/1.1" 200 72281
+192.168.1.5 - - [10/Nov/2012 23:21:47] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352604775.97.jpeg'.
+[0m192.168.1.8 - - [11/Nov/2012 03:32:59] "GET /snap HTTP/1.1" 200 65996
+192.168.1.8 - - [11/Nov/2012 03:32:59] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352604807.91.jpeg'.
+[0m192.168.1.8 - - [11/Nov/2012 03:33:31] "GET /snap HTTP/1.1" 200 66787
+192.168.1.8 - - [11/Nov/2012 03:33:31] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352604864.23.jpeg'.
+[0m192.168.1.8 - - [11/Nov/2012 03:34:28] "GET /snap HTTP/1.1" 200 65598
+192.168.1.8 - - [11/Nov/2012 03:34:29] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352604911.11.jpeg'.
+[0m192.168.1.8 - - [11/Nov/2012 03:35:16] "GET /snap HTTP/1.1" 200 67096
+192.168.1.8 - - [11/Nov/2012 03:35:16] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352605071.85.jpeg'.
+[0m192.168.1.8 - - [11/Nov/2012 03:37:57] "GET /snap HTTP/1.1" 200 65789
+192.168.1.8 - - [11/Nov/2012 03:37:57] "GET /favicon.ico HTTP/1.1" 404 745
+192.168.1.8 - - [11/Nov/2012 03:38:26] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352617303.79.jpeg'.
+[0m192.168.1.5 - - [11/Nov/2012 07:01:45] "GET /snap HTTP/1.1" 200 71711
+192.168.1.5 - - [11/Nov/2012 07:01:46] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352617411.46.jpeg'.
+[0m192.168.1.5 - - [11/Nov/2012 07:03:35] "GET /snap HTTP/1.1" 200 69058
+192.168.1.5 - - [11/Nov/2012 07:03:36] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352618549.54.jpeg'.
+[0m192.168.1.5 - - [11/Nov/2012 07:22:30] "GET /snap HTTP/1.1" 200 63635
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352618594.87.jpeg'.
+[0m192.168.1.5 - - [11/Nov/2012 07:23:20] "GET /snap HTTP/1.1" 200 71484
+192.168.1.5 - - [11/Nov/2012 07:23:20] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352626310.39.jpeg'.
+[0m115.238.230.117 - - [11/Nov/2012 09:31:55] "GET /snap HTTP/1.1" 200 65969
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352682709.77.jpeg'.
+[0m192.168.1.5 - - [12/Nov/2012 01:11:51] "GET /snap HTTP/1.1" 200 62836
+192.168.1.5 - - [12/Nov/2012 01:11:51] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352688468.05.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 02:47:50] "GET /snap HTTP/1.1" 200 69889
+114.80.235.146 - - [12/Nov/2012 02:47:50] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352691762.9.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 03:42:44] "GET /snap HTTP/1.1" 200 69779
+114.80.235.146 - - [12/Nov/2012 03:42:44] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352692973.92.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 04:02:54] "GET /snap HTTP/1.1" 200 70922
+114.80.235.146 - - [12/Nov/2012 04:02:55] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352693002.83.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 04:03:25] "GET /snap HTTP/1.1" 200 64622
+114.80.235.146 - - [12/Nov/2012 04:03:25] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352693680.7.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 04:14:41] "GET /snap HTTP/1.1" 200 70057
+114.80.235.146 - - [12/Nov/2012 04:14:42] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352693686.92.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 04:14:49] "GET /snap HTTP/1.1" 200 64286
+114.80.235.146 - - [12/Nov/2012 04:14:49] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352693820.25.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 04:17:02] "GET /snap HTTP/1.1" 200 64412
+114.80.235.146 - - [12/Nov/2012 04:17:02] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352694418.29.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 04:27:02] "GET /snap HTTP/1.1" 200 64950
+114.80.235.146 - - [12/Nov/2012 04:27:02] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352694879.17.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 04:34:40] "GET /snap HTTP/1.1" 200 70446
+114.80.235.146 - - [12/Nov/2012 04:34:41] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352697250.68.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:14:11] "GET /snap HTTP/1.1" 200 69817
+114.80.235.146 - - [12/Nov/2012 05:14:12] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352697267.45.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:14:28] "GET /snap HTTP/1.1" 200 69366
+114.80.235.146 - - [12/Nov/2012 05:14:28] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352697991.18.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:26:32] "GET /snap HTTP/1.1" 200 69968
+114.80.235.146 - - [12/Nov/2012 05:26:33] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698020.77.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:27:04] "GET /snap HTTP/1.1" 200 68185
+114.80.235.146 - - [12/Nov/2012 05:27:05] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698057.3.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:27:39] "GET /snap HTTP/1.1" 200 70410
+114.80.235.146 - - [12/Nov/2012 05:27:39] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698078.77.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:28:00] "GET /snap HTTP/1.1" 200 70367
+114.80.235.146 - - [12/Nov/2012 05:28:01] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698096.73.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:28:17] "GET /snap HTTP/1.1" 200 72455
+114.80.235.146 - - [12/Nov/2012 05:28:18] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698103.52.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:28:25] "GET /snap HTTP/1.1" 200 69701
+114.80.235.146 - - [12/Nov/2012 05:28:25] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698120.71.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:28:42] "GET /snap HTTP/1.1" 200 67374
+114.80.235.146 - - [12/Nov/2012 05:28:42] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698203.31.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:30:04] "GET /snap HTTP/1.1" 200 67043
+114.80.235.146 - - [12/Nov/2012 05:30:05] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352698597.38.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:36:39] "GET /snap HTTP/1.1" 200 66622
+114.80.235.146 - - [12/Nov/2012 05:36:39] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352699001.69.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:43:23] "GET /snap HTTP/1.1" 200 67338
+114.80.235.146 - - [12/Nov/2012 05:43:24] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352699573.46.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 05:52:54] "GET /snap HTTP/1.1" 200 72477
+114.80.235.146 - - [12/Nov/2012 05:52:54] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700706.13.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:11:47] "GET /snap HTTP/1.1" 200 73611
+114.80.235.146 - - [12/Nov/2012 06:11:48] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700714.14.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:12:02] "GET /snap HTTP/1.1" 200 77531
+114.80.235.146 - - [12/Nov/2012 06:12:03] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700729.63.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:12:11] "GET /snap HTTP/1.1" 200 64192
+114.80.235.146 - - [12/Nov/2012 06:12:11] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700741.49.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:12:24] "GET /snap HTTP/1.1" 200 61756
+114.80.235.146 - - [12/Nov/2012 06:12:24] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700766.13.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:12:52] "GET /snap HTTP/1.1" 200 64263
+114.80.235.146 - - [12/Nov/2012 06:12:53] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700779.18.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:13:00] "GET /snap HTTP/1.1" 200 69656
+114.80.235.146 - - [12/Nov/2012 06:13:00] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700784.97.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:13:10] "GET /snap HTTP/1.1" 200 62532
+114.80.235.146 - - [12/Nov/2012 06:13:10] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700807.06.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:13:29] "GET /snap HTTP/1.1" 200 64899
+114.80.235.146 - - [12/Nov/2012 06:13:30] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700830.61.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:13:52] "GET /snap HTTP/1.1" 200 55320
+114.80.235.146 - - [12/Nov/2012 06:13:52] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700846.54.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:14:08] "GET /snap HTTP/1.1" 200 55327
+114.80.235.146 - - [12/Nov/2012 06:14:08] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700866.52.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:14:27] "GET /snap HTTP/1.1" 200 80021
+114.80.235.146 - - [12/Nov/2012 06:14:28] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700897.81.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:15:02] "GET /snap HTTP/1.1" 200 55762
+114.80.235.146 - - [12/Nov/2012 06:15:02] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352700946.56.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:15:51] "GET /snap HTTP/1.1" 200 55249
+114.80.235.146 - - [12/Nov/2012 06:15:52] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352701734.81.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:28:56] "GET /snap HTTP/1.1" 200 55502
+114.80.235.146 - - [12/Nov/2012 06:28:57] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352702624.96.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 06:43:46] "GET /snap HTTP/1.1" 200 58008
+114.80.235.146 - - [12/Nov/2012 06:43:47] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352707040.34.jpeg'.
+[0m74.125.176.40 - - [12/Nov/2012 07:57:22] "GET /snap HTTP/1.1" 200 61571
+74.125.19.28 - - [12/Nov/2012 07:57:25] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352708514.94.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 08:22:01] "GET /snap HTTP/1.1" 200 67826
+114.80.235.146 - - [12/Nov/2012 08:22:01] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352713755.01.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 09:49:21] "GET /snap HTTP/1.1" 200 74051
+114.80.235.146 - - [12/Nov/2012 09:49:22] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352715078.29.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 10:11:19] "GET /snap HTTP/1.1" 200 81239
+114.80.235.146 - - [12/Nov/2012 10:11:20] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352716895.91.jpeg'.
+[0m114.80.235.146 - - [12/Nov/2012 10:41:36] "GET /snap HTTP/1.1" 200 59256
+114.80.235.146 - - [12/Nov/2012 10:41:37] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352789684.95.jpeg'.
+[0m114.80.235.146 - - [13/Nov/2012 06:54:47] "GET /snap HTTP/1.1" 200 57410
+114.80.235.146 - - [13/Nov/2012 06:54:47] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352796815.08.jpeg'.
+[0m114.80.235.146 - - [13/Nov/2012 08:53:36] "GET /snap HTTP/1.1" 200 65515
+114.80.235.146 - - [13/Nov/2012 08:53:36] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352796827.22.jpeg'.
+[0m114.80.235.146 - - [13/Nov/2012 08:53:48] "GET /snap HTTP/1.1" 200 65833
+114.80.235.146 - - [13/Nov/2012 08:53:48] "GET /favicon.ico HTTP/1.1" 404 750
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352816397.64.jpeg'.
+[0m192.168.1.2 - - [13/Nov/2012 14:20:00] "GET /snap HTTP/1.1" 200 71253
+192.168.1.2 - - [13/Nov/2012 14:20:00] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352816432.75.jpeg'.
+[0m192.168.1.2 - - [13/Nov/2012 14:20:39] "GET /snap HTTP/1.1" 200 67564
+192.168.1.2 - - [13/Nov/2012 14:20:39] "GET /favicon.ico HTTP/1.1" 404 745
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1352888898.46.jpeg'
+114.80.235.146 - - [14/Nov/2012 10:28:28] "GET /snap HTTP/1.1" 500 753
+114.80.235.146 - - [14/Nov/2012 10:28:29] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352888938.41.jpeg'.
+[0m114.80.235.146 - - [14/Nov/2012 10:29:05] "GET /snap HTTP/1.1" 200 76335
+114.80.235.146 - - [14/Nov/2012 10:29:05] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352902129.41.jpeg'.
+[0m192.168.1.2 - - [14/Nov/2012 14:08:51] "GET /snap HTTP/1.1" 200 63898
+192.168.1.2 - - [14/Nov/2012 14:08:52] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1352950766.29.jpeg'.
+[0m114.80.235.146 - - [15/Nov/2012 03:39:28] "GET /snap HTTP/1.1" 200 60580
+114.80.235.146 - - [15/Nov/2012 03:39:28] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353033592.88.jpeg'.
+[0m114.80.235.146 - - [16/Nov/2012 02:40:03] "GET /snap HTTP/1.1" 200 70094
+114.80.235.146 - - [16/Nov/2012 02:40:04] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353034715.02.jpeg'.
+[0m114.80.235.146 - - [16/Nov/2012 02:58:37] "GET /snap HTTP/1.1" 200 71262
+114.80.235.146 - - [16/Nov/2012 02:58:38] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353045080.65.jpeg'.
+[0m114.80.235.146 - - [16/Nov/2012 05:51:21] "GET /snap HTTP/1.1" 200 61818
+114.80.235.146 - - [16/Nov/2012 05:51:22] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1353046996.32.jpeg'
+114.80.235.146 - - [16/Nov/2012 06:23:26] "GET /snap HTTP/1.1" 500 753
+114.80.235.146 - - [16/Nov/2012 06:23:27] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353047214.38.jpeg'.
+[0m114.80.235.146 - - [16/Nov/2012 06:26:55] "GET /snap HTTP/1.1" 200 74156
+114.80.235.146 - - [16/Nov/2012 06:26:56] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353047236.1.jpeg'.
+[0m114.80.235.146 - - [16/Nov/2012 06:27:17] "GET /snap HTTP/1.1" 200 69449
+114.80.235.146 - - [16/Nov/2012 06:27:17] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353047556.61.jpeg'.
+[0m114.80.235.146 - - [16/Nov/2012 06:32:39] "GET /snap HTTP/1.1" 200 74454
+114.80.235.146 - - [16/Nov/2012 06:32:40] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353125489.89.jpeg'.
+[0m192.168.1.4 - - [17/Nov/2012 04:11:32] "GET /snap HTTP/1.1" 200 66479
+192.168.1.4 - - [17/Nov/2012 04:11:33] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353294160.5.jpeg'.
+[0m114.80.235.146 - - [19/Nov/2012 03:02:43] "GET /snap HTTP/1.1" 200 62575
+114.80.235.146 - - [19/Nov/2012 03:02:43] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353395314.32.jpeg'.
+[0m114.80.235.146 - - [20/Nov/2012 07:08:40] "GET /snap HTTP/1.1" 200 67135
+114.80.235.146 - - [20/Nov/2012 07:08:41] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1353542378.77.jpeg'
+192.168.1.4 - - [21/Nov/2012 23:59:49] "GET /snap HTTP/1.1" 500 748
+192.168.1.4 - - [21/Nov/2012 23:59:49] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353542407.03.jpeg'.
+[0m192.168.1.4 - - [22/Nov/2012 00:00:08] "GET /snap HTTP/1.1" 200 73582
+192.168.1.4 - - [22/Nov/2012 00:00:09] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1353566281.4.jpeg'
+74.125.19.17 - - [22/Nov/2012 06:38:11] "GET /snap HTTP/1.1" 500 753
+74.125.19.44 - - [22/Nov/2012 06:38:14] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353566296.1.jpeg'.
+[0m74.125.19.17 - - [22/Nov/2012 06:38:26] "GET /snap HTTP/1.1" 200 79415
+74.125.176.45 - - [22/Nov/2012 06:38:29] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353577898.91.jpeg'.
+[0m114.80.235.146 - - [22/Nov/2012 09:51:41] "GET /snap HTTP/1.1" 200 70919
+114.80.235.146 - - [22/Nov/2012 09:51:42] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353579288.72.jpeg'.
+[0m203.156.200.130 - - [22/Nov/2012 10:14:52] "GET /snap HTTP/1.1" 200 65534
+203.156.200.130 - - [22/Nov/2012 10:14:52] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353580381.4.jpeg'.
+[0m203.156.200.130 - - [22/Nov/2012 10:33:03] "GET /snap HTTP/1.1" 200 69514
+203.156.200.130 - - [22/Nov/2012 10:33:04] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1353580802.67.jpeg'
+203.156.200.130 - - [22/Nov/2012 10:40:13] "GET /snap HTTP/1.1" 500 753
+203.156.200.130 - - [22/Nov/2012 10:40:13] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353580815.28.jpeg'.
+[0m203.156.200.130 - - [22/Nov/2012 10:40:19] "GET /snap HTTP/1.1" 200 73185
+203.156.200.130 - - [22/Nov/2012 10:40:20] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353580993.39.jpeg'.
+[0m203.156.200.130 - - [22/Nov/2012 10:43:16] "GET /snap HTTP/1.1" 200 70192
+203.156.200.130 - - [22/Nov/2012 10:43:16] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353581142.38.jpeg'.
+[0m203.156.200.130 - - [22/Nov/2012 10:45:48] "GET /snap HTTP/1.1" 200 69767
+203.156.200.130 - - [22/Nov/2012 10:45:48] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353581171.26.jpeg'.
+[0m203.156.200.130 - - [22/Nov/2012 10:46:14] "GET /snap HTTP/1.1" 200 68051
+203.156.200.130 - - [22/Nov/2012 10:46:15] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353581652.37.jpeg'.
+[0m203.156.200.130 - - [22/Nov/2012 10:54:17] "GET /snap HTTP/1.1" 200 68470
+203.156.200.130 - - [22/Nov/2012 10:54:18] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353643406.88.jpeg'.
+[0m203.156.200.130 - - [23/Nov/2012 04:03:28] "GET /snap HTTP/1.1" 200 74931
+203.156.200.130 - - [23/Nov/2012 04:03:28] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353648787.89.jpeg'.
+[0m203.156.200.130 - - [23/Nov/2012 05:33:09] "GET /snap HTTP/1.1" 200 73589
+203.156.200.130 - - [23/Nov/2012 05:33:09] "GET /favicon.ico HTTP/1.1" 404 750
+124.115.0.162 - - [23/Nov/2012 05:41:48] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353653594.2.jpeg'.
+[0m203.156.200.130 - - [23/Nov/2012 06:53:19] "GET /snap HTTP/1.1" 200 75679
+203.156.200.130 - - [23/Nov/2012 06:53:20] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1353656381.99.jpeg'
+203.156.200.130 - - [23/Nov/2012 07:39:52] "GET /snap HTTP/1.1" 500 753
+203.156.200.130 - - [23/Nov/2012 07:39:52] "GET /favicon.ico HTTP/1.1" 404 750
+203.156.200.130 - - [23/Nov/2012 07:42:26] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353656547.44.jpeg'.
+[0m203.156.200.130 - - [23/Nov/2012 07:42:34] "GET /snap HTTP/1.1" 200 76682
+203.156.200.130 - - [23/Nov/2012 07:42:34] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353660075.36.jpeg'.
+[0m203.156.200.130 - - [23/Nov/2012 08:41:23] "GET /snap HTTP/1.1" 200 76147
+203.156.200.130 - - [23/Nov/2012 08:41:24] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1353666712.84.jpeg'
+203.156.200.130 - - [23/Nov/2012 10:32:03] "GET /snap HTTP/1.1" 500 753
+203.156.200.130 - - [23/Nov/2012 10:32:03] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1353666727.08.jpeg'.
+[0m203.156.200.130 - - [23/Nov/2012 10:32:09] "GET /snap HTTP/1.1" 200 74457
+203.156.200.130 - - [23/Nov/2012 10:32:10] "GET /favicon.ico HTTP/1.1" 404 750
+58.221.114.14 - - [23/Nov/2012 17:27:11] "GET http://www.google.com/ HTTP/1.0" 404 765
+124.115.4.202 - - [23/Nov/2012 19:00:08] "GET / HTTP/1.1" 404 728
+124.115.0.169 - - [24/Nov/2012 07:51:44] "GET / HTTP/1.1" 404 728
+124.115.4.192 - - [24/Nov/2012 20:24:49] "GET / HTTP/1.1" 404 728
+124.115.0.168 - - [25/Nov/2012 09:04:57] "GET / HTTP/1.1" 404 728
+124.115.0.111 - - [26/Nov/2012 00:09:57] "GET / HTTP/1.1" 404 728
+124.115.0.26 - - [26/Nov/2012 14:28:53] "GET / HTTP/1.1" 404 728
+124.115.4.201 - - [27/Nov/2012 08:22:24] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1354011263.8.jpeg'
+203.156.200.130 - - [27/Nov/2012 10:14:34] "GET /snap HTTP/1.1" 500 753
+203.156.200.130 - - [27/Nov/2012 10:14:34] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1354011313.63.jpeg'.
+[0m203.156.200.130 - - [27/Nov/2012 10:15:22] "GET /snap HTTP/1.1" 200 73182
+203.156.200.130 - - [27/Nov/2012 10:15:22] "GET /favicon.ico HTTP/1.1" 404 750
+Traceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 9, in myinfo
+    html += cpuinfo()+"<br>"
+NameError: global name 'cpuinfo' is not defined
+203.156.200.130 - - [27/Nov/2012 10:16:15] "GET /myinfo HTTP/1.1" 500 755
+203.156.200.130 - - [27/Nov/2012 10:16:16] "GET /favicon.ico HTTP/1.1" 404 750
+Traceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 9, in myinfo
+    html += cpuinfo()+"<br>"
+NameError: global name 'cpuinfo' is not defined
+203.156.200.130 - - [27/Nov/2012 10:16:23] "GET /myinfo HTTP/1.1" 500 755
+203.156.200.130 - - [27/Nov/2012 10:16:25] "GET /favicon.ico HTTP/1.1" 404 750
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+Traceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 9, in myinfo
+    html += cpuinfo()+"<br>"
+NameError: global name 'cpuinfo' is not defined
+203.156.200.130 - - [27/Nov/2012 10:17:44] "GET /myinfo HTTP/1.1" 500 755
+203.156.200.130 - - [27/Nov/2012 10:17:44] "GET /favicon.ico HTTP/1.1" 404 750
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+203.156.200.130 - - [27/Nov/2012 10:18:10] "GET /myinfo HTTP/1.1" 200 1069
+203.156.200.130 - - [27/Nov/2012 10:18:10] "GET /favicon.ico HTTP/1.1" 404 750
+111.161.62.195 - - [27/Nov/2012 10:18:48] "GET /myinfo HTTP/1.1" 200 1069
+111.161.62.196 - - [27/Nov/2012 10:18:49] "GET /myinfo HTTP/1.1" 200 1069
+111.161.62.198 - - [27/Nov/2012 10:18:50] "GET /myinfo HTTP/1.1" 200 1069
+111.161.62.195 - - [27/Nov/2012 10:18:52] "GET /myinfo HTTP/1.1" 200 1069
+8.161.17.46.bridgep.com - - [27/Nov/2012 10:19:24] "GET /myinfo HTTP/1.1" 200 1069
+8.161.17.46.bridgep.com - - [27/Nov/2012 10:19:25] "GET /favicon.ico HTTP/1.1" 404 750
+183.60.35.22 - - [27/Nov/2012 10:19:33] "GET /myinfo HTTP/1.1" 200 1069
+101.226.33.223 - - [27/Nov/2012 10:48:47] "GET /myinfo HTTP/1.1" 200 1069
+8.161.17.46.bridgep.com - - [27/Nov/2012 17:02:33] "GET /myinfo HTTP/1.1" 200 1069
+124.115.0.105 - - [27/Nov/2012 18:54:50] "GET / HTTP/1.1" 404 728
+119.147.146.118 - - [27/Nov/2012 23:33:39] "GET /myinfo HTTP/1.1" 200 1069
+111.161.62.196 - - [28/Nov/2012 00:40:34] "GET /myinfo HTTP/1.1" 200 1069
+124.115.0.24 - - [28/Nov/2012 10:16:14] "GET / HTTP/1.1" 404 728
+124.115.0.28 - - [28/Nov/2012 21:43:48] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1354158400.49.jpeg'.
+[0m203.156.200.130 - - [29/Nov/2012 03:06:42] "GET /snap HTTP/1.1" 200 70680
+203.156.200.130 - - [29/Nov/2012 03:06:42] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1354172883.69.jpeg'.
+[0m203.156.200.130 - - [29/Nov/2012 07:08:07] "GET /snap HTTP/1.1" 200 70553
+203.156.200.130 - - [29/Nov/2012 07:08:08] "GET /favicon.ico HTTP/1.1" 404 750
+124.115.0.167 - - [29/Nov/2012 08:42:41] "GET / HTTP/1.1" 404 728
+123.151.148.187 - - [29/Nov/2012 16:09:43] "GET /robots.txt HTTP/1.1" 404 748
+123.151.148.187 - - [29/Nov/2012 16:09:43] "GET / HTTP/1.1" 404 728
+124.115.0.139 - - [29/Nov/2012 16:49:54] "GET / HTTP/1.1" 404 728
+123.151.148.208 - - [29/Nov/2012 23:01:35] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1354243575.81.jpeg'.
+[0m203.156.200.130 - - [30/Nov/2012 02:46:17] "GET /snap HTTP/1.1" 200 74704
+203.156.200.130 - - [30/Nov/2012 02:46:17] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1354266251.38.jpeg'
+203.156.200.130 - - [30/Nov/2012 09:04:21] "GET /snap HTTP/1.1" 500 753
+203.156.200.130 - - [30/Nov/2012 09:04:22] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1354266265.24.jpeg'.
+[0m203.156.200.130 - - [30/Nov/2012 09:04:26] "GET /snap HTTP/1.1" 200 64335
+203.156.200.130 - - [30/Nov/2012 09:04:26] "GET /favicon.ico HTTP/1.1" 404 750
+124.115.4.201 - - [30/Nov/2012 09:22:13] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1354267600.45.jpeg'.
+[0m203.156.200.130 - - [30/Nov/2012 09:26:47] "GET /snap HTTP/1.1" 200 83083
+203.156.200.130 - - [30/Nov/2012 09:26:47] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1354269539.84.jpeg'
+203.156.200.130 - - [30/Nov/2012 09:59:10] "GET /snap HTTP/1.1" 500 753
+203.156.200.130 - - [30/Nov/2012 09:59:10] "GET /favicon.ico HTTP/1.1" 404 750
+203.156.200.130 - - [30/Nov/2012 10:24:48] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1354271089.59.jpeg'.
+[0m203.156.200.130 - - [30/Nov/2012 10:24:54] "GET /snap HTTP/1.1" 200 80732
+203.156.200.130 - - [30/Nov/2012 10:24:55] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.139.210 - - [30/Nov/2012 13:06:16] "GET / HTTP/1.1" 404 728
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1355205538.02.jpeg'.
+[0m203.156.200.130 - - [11/Dec/2012 05:58:59] "GET /snap HTTP/1.1" 200 66499
+203.156.200.130 - - [11/Dec/2012 05:58:59] "GET /favicon.ico HTTP/1.1" 404 750
+124.115.4.191 - - [11/Dec/2012 11:11:17] "GET / HTTP/1.1" 404 728
+123.151.148.196 - - [11/Dec/2012 11:24:05] "GET / HTTP/1.1" 404 728
+124.115.4.198 - - [11/Dec/2012 21:52:38] "GET / HTTP/1.1" 404 728
+123.151.148.159 - - [12/Dec/2012 00:48:10] "GET / HTTP/1.1" 404 728
+124.115.0.156 - - [12/Dec/2012 07:40:16] "GET / HTTP/1.1" 404 728
+123.151.148.159 - - [12/Dec/2012 14:19:47] "GET / HTTP/1.1" 404 728
+124.115.4.205 - - [12/Dec/2012 18:08:13] "GET / HTTP/1.1" 404 728
+124.115.0.111 - - [12/Dec/2012 23:35:57] "GET / HTTP/1.1" 404 728
+123.151.148.159 - - [13/Dec/2012 03:35:46] "GET / HTTP/1.1" 404 728
+123.151.148.159 - - [13/Dec/2012 13:16:52] "GET / HTTP/1.1" 404 728
+124.115.4.204 - - [13/Dec/2012 15:07:07] "GET / HTTP/1.1" 404 728
+124.115.0.169 - - [14/Dec/2012 02:21:18] "GET / HTTP/1.1" 404 728
+123.151.148.168 - - [14/Dec/2012 07:28:06] "GET / HTTP/1.1" 404 728
+123.151.148.168 - - [14/Dec/2012 11:51:05] "GET / HTTP/1.1" 404 728
+124.115.4.203 - - [14/Dec/2012 17:30:40] "GET / HTTP/1.1" 404 728
+123.151.148.168 - - [15/Dec/2012 01:19:08] "GET / HTTP/1.1" 404 728
+124.115.4.192 - - [15/Dec/2012 07:59:10] "GET / HTTP/1.1" 404 728
+123.151.148.168 - - [15/Dec/2012 10:50:19] "GET / HTTP/1.1" 404 728
+124.115.0.138 - - [15/Dec/2012 21:48:47] "GET / HTTP/1.1" 404 728
+123.151.148.168 - - [15/Dec/2012 23:34:48] "GET / HTTP/1.1" 404 728
+218.89.119.63 - - [16/Dec/2012 07:30:39] "GET http://www.baidu.com/ HTTP/1.1" 404 762
+124.115.4.191 - - [16/Dec/2012 09:35:57] "GET / HTTP/1.1" 404 728
+123.151.148.168 - - [16/Dec/2012 11:20:42] "GET / HTTP/1.1" 404 728
+124.115.0.156 - - [16/Dec/2012 20:58:53] "GET / HTTP/1.1" 404 728
+123.151.148.207 - - [16/Dec/2012 23:09:42] "GET / HTTP/1.1" 404 728
+123.151.139.216 - - [17/Dec/2012 09:46:29] "GET / HTTP/1.1" 404 728
+124.115.4.192 - - [17/Dec/2012 12:27:32] "GET / HTTP/1.1" 404 728
+123.151.139.216 - - [17/Dec/2012 19:21:19] "GET / HTTP/1.1" 404 728
+124.115.4.191 - - [18/Dec/2012 00:22:07] "GET / HTTP/1.1" 404 728
+123.151.148.155 - - [18/Dec/2012 09:30:23] "GET / HTTP/1.1" 404 728
+124.115.0.27 - - [18/Dec/2012 15:46:32] "GET / HTTP/1.1" 404 728
+123.151.139.213 - - [18/Dec/2012 21:04:46] "GET / HTTP/1.1" 404 728
+124.115.0.108 - - [19/Dec/2012 06:02:19] "GET / HTTP/1.1" 404 728
+124.115.0.22 - - [19/Dec/2012 17:37:59] "GET / HTTP/1.1" 404 728
+123.151.148.168 - - [19/Dec/2012 23:15:43] "GET / HTTP/1.1" 404 728
+124.115.4.200 - - [20/Dec/2012 07:20:38] "GET / HTTP/1.1" 404 728
+123.151.148.171 - - [20/Dec/2012 09:52:24] "GET / HTTP/1.1" 404 728
+124.115.0.26 - - [20/Dec/2012 19:02:16] "GET / HTTP/1.1" 404 728
+123.151.139.218 - - [21/Dec/2012 00:54:58] "GET / HTTP/1.1" 404 728
+124.115.0.167 - - [21/Dec/2012 09:43:50] "GET / HTTP/1.1" 404 728
+123.151.139.208 - - [21/Dec/2012 12:05:12] "GET / HTTP/1.1" 404 728
+124.115.0.108 - - [21/Dec/2012 20:22:48] "GET / HTTP/1.1" 404 728
+123.151.139.213 - - [21/Dec/2012 23:43:25] "GET / HTTP/1.1" 404 728
+124.115.4.194 - - [22/Dec/2012 05:43:53] "GET / HTTP/1.1" 404 728
+123.151.148.192 - - [22/Dec/2012 09:09:55] "GET / HTTP/1.1" 404 728
+123.151.139.211 - - [22/Dec/2012 17:07:48] "GET / HTTP/1.1" 404 728
+124.115.0.169 - - [22/Dec/2012 19:37:34] "GET / HTTP/1.1" 404 728
+123.151.139.211 - - [23/Dec/2012 04:44:14] "GET / HTTP/1.1" 404 728
+124.115.0.16 - - [23/Dec/2012 09:24:34] "GET / HTTP/1.1" 404 728
+123.151.139.211 - - [23/Dec/2012 16:19:03] "GET / HTTP/1.1" 404 728
+124.115.0.166 - - [23/Dec/2012 20:02:03] "GET / HTTP/1.1" 404 728
+123.151.139.211 - - [24/Dec/2012 01:40:36] "GET / HTTP/1.1" 404 728
+123.151.148.156 - - [24/Dec/2012 10:20:30] "GET / HTTP/1.1" 404 728
+123.151.148.156 - - [24/Dec/2012 21:05:45] "GET / HTTP/1.1" 404 728
+123.151.148.156 - - [25/Dec/2012 02:08:29] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1356404866.75.jpeg'.
+[0m114.80.235.136 - - [25/Dec/2012 03:07:50] "GET /snap HTTP/1.1" 200 70610
+114.80.235.136 - - [25/Dec/2012 03:07:50] "GET /favicon.ico HTTP/1.1" 404 750
+103.8.221.154 - - [28/Dec/2012 01:18:41] "GET http://www.sina.com.cn/ HTTP/1.1" 404 768
+123.151.148.190 - - [28/Dec/2012 01:46:27] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [28/Dec/2012 01:46:37] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [28/Dec/2012 01:46:47] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [28/Dec/2012 01:46:57] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [28/Dec/2012 02:28:00] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1356682730.89.jpeg'.
+[0m114.80.235.146 - - [28/Dec/2012 08:18:53] "GET /snap HTTP/1.1" 200 71421
+114.80.235.146 - - [28/Dec/2012 08:18:54] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1356683584.26.jpeg'.
+[0m114.80.235.146 - - [28/Dec/2012 08:33:05] "GET /snap HTTP/1.1" 200 67143
+114.80.235.146 - - [28/Dec/2012 08:33:05] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1356685831.52.jpeg'.
+[0m114.80.235.146 - - [28/Dec/2012 09:10:42] "GET /snap HTTP/1.1" 200 71890
+114.80.235.146 - - [28/Dec/2012 09:10:42] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1356685849.35.jpeg'.
+[0m114.80.235.146 - - [28/Dec/2012 09:10:53] "GET /snap HTTP/1.1" 200 66857
+114.80.235.146 - - [28/Dec/2012 09:10:53] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1356687651.13.jpeg'.
+[0m114.80.235.146 - - [28/Dec/2012 09:40:59] "GET /snap HTTP/1.1" 200 83436
+114.80.235.146 - - [28/Dec/2012 09:41:00] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1356690293.54.jpeg'.
+[0m114.80.235.146 - - [28/Dec/2012 10:24:55] "GET /snap HTTP/1.1" 200 77000
+114.80.235.146 - - [28/Dec/2012 10:24:56] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.190 - - [28/Dec/2012 14:43:38] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [28/Dec/2012 20:19:05] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [29/Dec/2012 07:22:19] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [29/Dec/2012 21:26:11] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [30/Dec/2012 07:36:37] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [30/Dec/2012 14:34:33] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [31/Dec/2012 04:41:26] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [31/Dec/2012 13:35:01] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [01/Jan/2013 00:21:46] "GET / HTTP/1.1" 404 728
+123.151.148.190 - - [01/Jan/2013 04:59:45] "GET / HTTP/1.1" 404 728
+123.151.148.170 - - [02/Jan/2013 02:22:04] "GET / HTTP/1.1" 404 728
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357269655.28.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 03:21:00] "GET /snap HTTP/1.1" 200 71936
+114.80.235.146 - - [04/Jan/2013 03:21:00] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357269687.69.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 03:21:28] "GET /snap HTTP/1.1" 200 75143
+114.80.235.146 - - [04/Jan/2013 03:21:29] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357269760.76.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 03:22:41] "GET /snap HTTP/1.1" 200 68370
+114.80.235.146 - - [04/Jan/2013 03:22:42] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357269926.72.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 03:25:27] "GET /snap HTTP/1.1" 200 73701
+114.80.235.146 - - [04/Jan/2013 03:25:28] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357270412.27.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 03:33:33] "GET /snap HTTP/1.1" 200 80917
+114.80.235.146 - - [04/Jan/2013 03:33:33] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357277811.25.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 05:36:53] "GET /snap HTTP/1.1" 200 70954
+114.80.235.146 - - [04/Jan/2013 05:36:54] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357283767.09.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 07:16:10] "GET /snap HTTP/1.1" 200 71997
+114.80.235.146 - - [04/Jan/2013 07:16:10] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357283793.62.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 07:16:41] "GET /snap HTTP/1.1" 200 71844
+114.80.235.146 - - [04/Jan/2013 07:16:41] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357284017.28.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 07:20:25] "GET /snap HTTP/1.1" 200 71885
+114.80.235.146 - - [04/Jan/2013 07:20:25] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1357284063.57.jpeg'
+114.80.235.146 - - [04/Jan/2013 07:21:13] "GET /snap HTTP/1.1" 500 753
+114.80.235.146 - - [04/Jan/2013 07:21:14] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357284078.07.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 07:21:20] "GET /snap HTTP/1.1" 200 73327
+114.80.235.146 - - [04/Jan/2013 07:21:20] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.170 - - [04/Jan/2013 08:39:53] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357293470.52.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 09:57:51] "GET /snap HTTP/1.1" 200 63557
+114.80.235.146 - - [04/Jan/2013 09:57:51] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357293484.35.jpeg'.
+[0m114.80.235.146 - - [04/Jan/2013 09:58:06] "GET /snap HTTP/1.1" 200 59985
+114.80.235.146 - - [04/Jan/2013 09:58:07] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.170 - - [04/Jan/2013 18:48:05] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357354137.3.jpeg'.
+[0m114.80.235.146 - - [05/Jan/2013 02:49:02] "GET /snap HTTP/1.1" 200 72944
+114.80.235.146 - - [05/Jan/2013 02:49:02] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.209 - - [05/Jan/2013 05:42:09] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357366213.71.jpeg'.
+[0m114.80.235.146 - - [05/Jan/2013 06:10:16] "GET /snap HTTP/1.1" 200 73430
+114.80.235.146 - - [05/Jan/2013 06:10:16] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357381223.3.jpeg'.
+[0m114.80.235.146 - - [05/Jan/2013 10:20:31] "GET /snap HTTP/1.1" 200 79288
+114.80.235.146 - - [05/Jan/2013 10:20:32] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.139.215 - - [05/Jan/2013 18:27:03] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357454362.35.jpeg'.
+[0m114.80.235.146 - - [06/Jan/2013 06:39:25] "GET /snap HTTP/1.1" 200 73474
+114.80.235.146 - - [06/Jan/2013 06:39:26] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.162 - - [06/Jan/2013 19:23:46] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357539016.2.jpeg'.
+[0m114.80.235.146 - - [07/Jan/2013 06:10:17] "GET /snap HTTP/1.1" 200 69984
+114.80.235.146 - - [07/Jan/2013 06:10:17] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1357539415.41.jpeg'
+114.80.235.146 - - [07/Jan/2013 06:17:05] "GET /snap HTTP/1.1" 500 753
+114.80.235.146 - - [07/Jan/2013 06:17:06] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.162 - - [07/Jan/2013 07:42:36] "GET / HTTP/1.1" 404 728
+123.151.148.210 - - [07/Jan/2013 17:33:41] "GET / HTTP/1.1" 404 728
+123.151.148.210 - - [08/Jan/2013 05:45:22] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357633565.5.jpeg'.
+[0m114.80.235.146 - - [08/Jan/2013 08:26:06] "GET /snap HTTP/1.1" 200 76092
+114.80.235.146 - - [08/Jan/2013 08:26:06] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.210 - - [08/Jan/2013 15:13:23] "GET / HTTP/1.1" 404 728
+123.151.148.210 - - [09/Jan/2013 00:47:42] "GET / HTTP/1.1" 404 728
+123.151.148.210 - - [09/Jan/2013 13:37:51] "GET / HTTP/1.1" 404 728
+123.151.148.210 - - [09/Jan/2013 23:02:56] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1357807809.06.jpeg'.
+[0m114.80.235.143 - - [10/Jan/2013 08:50:28] "GET /snap HTTP/1.1" 200 77561
+114.80.235.143 - - [10/Jan/2013 08:50:29] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.210 - - [10/Jan/2013 11:51:31] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1357894547.93.jpeg'
+114.80.235.146 - - [11/Jan/2013 08:55:58] "GET /snap HTTP/1.1" 500 753
+114.80.235.146 - - [11/Jan/2013 08:55:58] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.210 - - [11/Jan/2013 14:52:07] "GET / HTTP/1.1" 404 728
+123.151.148.210 - - [12/Jan/2013 04:48:23] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [12/Jan/2013 18:12:32] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [13/Jan/2013 05:42:25] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [13/Jan/2013 16:33:33] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [14/Jan/2013 02:47:08] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [14/Jan/2013 20:02:40] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [15/Jan/2013 06:37:50] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [15/Jan/2013 20:13:48] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1358317459.36.jpeg'
+114.80.235.146 - - [16/Jan/2013 06:24:29] "GET /snap HTTP/1.1" 500 753
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1358317469.67.jpeg'.
+[0mTraceback (most recent call last):
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 86, in run
+    self.finish_response()
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 127, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.7/wsgiref/handlers.py", line 215, in write
+    self._write(data)
+  File "/usr/lib/python2.7/socket.py", line 324, in write
+    self.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 284, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 310, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 323, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python2.7/SocketServer.py", line 640, in __init__
+    self.finish()
+  File "/usr/lib/python2.7/SocketServer.py", line 693, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+114.80.235.146 - - [16/Jan/2013 06:24:37] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.162 - - [16/Jan/2013 10:18:04] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [16/Jan/2013 23:43:52] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [17/Jan/2013 12:27:44] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [18/Jan/2013 01:42:35] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [18/Jan/2013 13:33:09] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [18/Jan/2013 23:27:22] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [19/Jan/2013 13:42:14] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [20/Jan/2013 03:26:57] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [20/Jan/2013 15:32:49] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [21/Jan/2013 05:11:45] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [21/Jan/2013 12:27:05] "GET / HTTP/1.1" 404 728
+123.151.148.162 - - [22/Jan/2013 01:22:16] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [22/Jan/2013 14:32:00] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [23/Jan/2013 04:06:58] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [23/Jan/2013 17:55:32] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [24/Jan/2013 09:58:54] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [24/Jan/2013 21:27:17] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [25/Jan/2013 09:02:24] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [25/Jan/2013 20:12:20] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [26/Jan/2013 14:02:16] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [27/Jan/2013 05:23:56] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [27/Jan/2013 21:58:21] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [28/Jan/2013 15:24:19] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [29/Jan/2013 02:28:48] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [29/Jan/2013 19:02:08] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [30/Jan/2013 12:08:42] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [30/Jan/2013 23:32:49] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [31/Jan/2013 16:23:07] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [01/Feb/2013 09:12:34] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1359732532.82.jpeg'.
+[0m192.168.1.2 - - [01/Feb/2013 15:28:56] "GET /snap HTTP/1.1" 200 74431
+192.168.1.2 - - [01/Feb/2013 15:28:56] "GET /favicon.ico HTTP/1.1" 404 745
+192.168.1.2 - - [01/Feb/2013 15:29:23] "GET /myinfo HTTP/1.1" 200 1069
+192.168.1.2 - - [01/Feb/2013 15:29:23] "GET /favicon.ico HTTP/1.1" 404 745
+123.151.148.189 - - [01/Feb/2013 21:18:52] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [02/Feb/2013 11:58:46] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [02/Feb/2013 23:06:48] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [03/Feb/2013 15:53:12] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [04/Feb/2013 04:17:08] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1359981639.89.jpeg'
+114.80.235.136 - - [04/Feb/2013 12:40:50] "GET /snap HTTP/1.1" 500 753
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1359983886.79.jpeg'
+180.153.206.20 - - [04/Feb/2013 13:18:16] "GET /snap HTTP/1.1" 500 753
+123.151.148.189 - - [04/Feb/2013 16:17:11] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [05/Feb/2013 05:03:08] "GET / HTTP/1.1" 404 728
+114.80.235.143 - - [05/Feb/2013 05:34:02] "GET /myinfo HTTP/1.1" 200 1069
+114.80.235.143 - - [05/Feb/2013 05:34:02] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[31mTimed out waiting for frame!
+[0m[31mNo frames captured.
+[0mTraceback (most recent call last):
+  File "/home/pi/pyshells/piinfo/bottle.py", line 763, in _handle
+    return route.call(**args)
+  File "/home/pi/pyshells/piinfo/bottle.py", line 1572, in wrapper
+    rv = callback(*a, **ka)
+  File "startpiinfo.py", line 22, in snap
+    f=open('/tmp/'+str(jpgname) +'.jpeg','rb')
+IOError: [Errno 2] No such file or directory: '/tmp/1360042463.13.jpeg'
+114.80.235.143 - - [05/Feb/2013 05:34:34] "GET /snap HTTP/1.1" 500 753
+114.80.235.143 - - [05/Feb/2013 05:34:35] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1360043104.5.jpeg'.
+[0m114.80.235.143 - - [05/Feb/2013 05:45:10] "GET /snap HTTP/1.1" 200 70919
+114.80.235.143 - - [05/Feb/2013 05:45:11] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.148.189 - - [05/Feb/2013 17:33:45] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [06/Feb/2013 08:27:01] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [06/Feb/2013 19:37:43] "GET / HTTP/1.1" 404 728
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1360224482.24.jpeg'.
+[0m192.168.1.4 - - [07/Feb/2013 08:08:03] "GET /snap HTTP/1.1" 200 78454
+192.168.1.4 - - [07/Feb/2013 08:08:04] "GET /favicon.ico HTTP/1.1" 404 745
+123.151.148.189 - - [07/Feb/2013 12:04:03] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [07/Feb/2013 19:17:12] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [08/Feb/2013 11:18:27] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [09/Feb/2013 02:37:14] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [09/Feb/2013 14:52:13] "GET / HTTP/1.1" 404 728
+59.60.156.46 - - [09/Feb/2013 18:20:10] "GET /manager/html HTTP/1.1" 404 749
+123.151.148.189 - - [10/Feb/2013 02:51:59] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [10/Feb/2013 14:42:12] "GET / HTTP/1.1" 404 728
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1361961007.25.jpeg'.
+[0m114.80.235.146 - - [27/Feb/2013 10:30:08] "GET /snap HTTP/1.1" 200 65656
+114.80.235.146 - - [27/Feb/2013 10:30:08] "GET /favicon.ico HTTP/1.1" 404 750
+123.151.139.208 - - [27/Feb/2013 12:27:03] "GET / HTTP/1.1" 404 728
+123.151.139.216 - - [28/Feb/2013 03:38:52] "GET / HTTP/1.1" 404 728
+123.151.148.189 - - [28/Feb/2013 22:02:50] "GET / HTTP/1.1" 404 728
+123.151.148.166 - - [02/Mar/2013 14:43:46] "GET / HTTP/1.1" 404 728
+123.151.148.166 - - [03/Mar/2013 05:27:14] "GET / HTTP/1.1" 404 728
+123.151.148.166 - - [03/Mar/2013 13:42:09] "GET / HTTP/1.1" 404 728
+123.151.148.166 - - [04/Mar/2013 08:17:25] "GET / HTTP/1.1" 404 728
+123.151.148.166 - - [04/Mar/2013 21:52:49] "GET / HTTP/1.1" 404 728
+123.151.148.166 - - [05/Mar/2013 08:26:57] "GET / HTTP/1.1" 404 728
+117.34.70.155 - - [07/Mar/2013 02:25:43] "GET /manager/html HTTP/1.1" 404 749
+114.80.215.211 - - [08/Mar/2013 04:09:47] "GET /manager/html HTTP/1.1" 404 749
+192.168.1.4 - - [09/Mar/2013 06:52:11] "GET /myinfo HTTP/1.1" 200 1069
+192.168.1.4 - - [09/Mar/2013 06:52:11] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1362812030.08.jpeg'.
+[0m192.168.1.4 - - [09/Mar/2013 06:53:59] "GET /snap HTTP/1.1" 200 55947
+192.168.1.4 - - [09/Mar/2013 06:54:00] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1362812073.08.jpeg'.
+[0m192.168.1.4 - - [09/Mar/2013 06:54:40] "GET /snap HTTP/1.1" 200 67954
+192.168.1.4 - - [09/Mar/2013 06:54:40] "GET /favicon.ico HTTP/1.1" 404 745
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1363576949.29.jpeg'.
+[0m114.80.235.146 - - [18/Mar/2013 03:22:33] "GET /snap HTTP/1.1" 200 70748
+114.80.235.146 - - [18/Mar/2013 03:22:33] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1363592520.41.jpeg'.
+[0m58.215.136.82 - - [18/Mar/2013 07:42:01] "GET /snap HTTP/1.1" 200 73489
+58.215.136.82 - - [18/Mar/2013 07:42:03] "GET /favicon.ico HTTP/1.1" 404 750
+114.80.235.146 - - [20/Mar/2013 03:04:13] "GET /myinfo HTTP/1.1" 200 1069
+114.80.235.146 - - [20/Mar/2013 03:04:13] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1363751546.9.jpeg'.
+[0m114.80.235.146 - - [20/Mar/2013 03:52:31] "GET /snap HTTP/1.1" 200 70617
+114.80.235.146 - - [20/Mar/2013 03:52:31] "GET /favicon.ico HTTP/1.1" 404 750
+[1m--- Opening /dev/video0...
+[0m[0mTrying source module v4l2...
+[0m[0m/dev/video0 opened.
+[0m[0mNo input was specified, using the first.
+[0m[0mAdjusting resolution from 384x288 to 352x288.
+[0m[1m--- Capturing frame...
+[0m[0mCaptured frame in 0.00 seconds.
+[0m[1m--- Processing captured image...
+[0m[0mWriting JPEG image to '/tmp/1363752882.49.jpeg'.
+[0m58.215.136.72 - - [20/Mar/2013 04:14:50] "GET /snap HTTP/1.1" 200 70829
+58.215.136.72 - - [20/Mar/2013 04:14:52] "GET /favicon.ico HTTP/1.1" 404 750
+5.39.42.188 - - [21/Mar/2013 19:18:53] "CONNECT 205.188.27.208:443 HTTP/1.0" 404 759
+5.39.42.188 - - [21/Mar/2013 19:33:16] "CONNECT 205.188.95.208:443 HTTP/1.0" 404 759
+Bottle v0.12-dev server starting up (using WSGIRefServer())...
+Listening on http://0.0.0.0:9999/
+Hit Ctrl-C to quit.
+

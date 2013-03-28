@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>首页设置</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<input type="hidden" id="selectmodule" value="{{selectmodule}}"/>
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" >
+                <div class="item_option">
+                 
+                  <select id="module">
+                    <option value='-1'>--选择要设置的版块--</option>
+                    %for one in moduledict.keys():
+                        <option value="{{one}}">{{moduledict.get(one)}}</option>
+                    %end
+                  </select>
+                            
+                  <button class="btn btn-small btn-primary"  id="add">添加</button>
+                  <button class="btn btn-small btn-primary"  id="update">修改</button>
+                  <button class="btn btn-small btn-primary"  id="del">删除</button>
+                </div>
+                 <div id="alert-area"></div>
+                <div class="yui-g" style="margin-top:50px">
+                    <input type="hidden" id="domain" value="{{domain}}"/>
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                          <thead>
+                              <tr align="center">
+                                    <th width="3%"><input type="checkbox" id="op"></th>
+                                    <th width="3%">ID</th>
+                                    <th>类型</th>
+                                    <th>标题</th>
+                                    <th>itemcode</th>
+                                    <th>链接地址</th>
+                                    <th>添加时间</th>
+
+                                    <th>位置</th>
+                              </tr>
+                          </thead>   
+                          <tbody>
+                              %for one in index_settings:
+                              %print one
+                            <tr>
+                                <td><input type="checkbox" class="op" value="{{one[0]}}"></td>
+                                <td>{{one[0]}}</td>
+                                <td>{{itemdict.get(str(one[4]))}}</td>
+                                <td>{{one[1]}}</td>
+                                <td>{{one[5]}}</td>
+                                <td>{{one[6]}}</td>
+                                <td>{{one[11]}}</td>
+                                <td>{{one[7]}}</td>
+                                
+                            </tr>
+                            %end
+                          </tbody>
+                  </table>       
+                   <div id="ttpage">
+                  </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+ <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+  <!-- data table plugin -->
+  <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+  <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+  <script type="text/javascript" src="{{domain}}/static/js/main/main.js"></script>
+</html>

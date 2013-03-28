@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>菜单管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-timepicker-addon.js"></script>
+    <!-- data table plugin -->
+    <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+    <script type="text/javascript"  src='{{domain}}/static/js/bootstrap/bootstrap-alert.js'></script>
+    <script type="text/javascript"  src='{{domain}}/static/js/bootstrap/bootstrap-modal.js'></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/video/video.js"></script>
+
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" >
+                <div class="item_option">
+                    <div class="yui-g" style="margin-top:5px">
+                        <div class="yui-g first">
+                            <div class="yui-u first">
+                               标题: <input type="text" id = "title" value="{{query_args.get('title')}}"/>
+                            </div>
+                            <div class="yui-u">
+                                视频ID: <input type="text" id = "id" value="{{query_args.get('id')}}"/>
+                            </div>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="yui-g" style="margin-buttom:9px;">
+                         <div class="yui-g first">
+                                <div class="yui-u first">
+                                   开始: <input type="text" id = "start" class="input-large" value="{{query_args.get('start')}}"/>
+                                </div>
+                                <div class="yui-u">
+                                    结&nbsp;&nbsp;&nbsp;束: <input type="text" id="end" class="input-large" value="{{query_args.get('end')}}"/>
+                                </div>
+                                 
+                         </div>
+                         <div class="yui-g">
+                            <div class="yui-u first">
+                                <button class="btn btn-small btn-primary"  id="search">查询</button>
+                            </div>
+                            <div class="yui-u">
+                                &nbsp;&nbsp;&nbsp;
+                            </div>
+                         </div>
+                     </div>
+                     <br>
+                     <div class="yui-g" >
+                        <div class="yui-g first">
+                            <div class="yui-u first">
+                                频道:
+                              <select id="channel">
+                                <option value='-1'>--选择要分发到的频道--</option>
+                                %for one in channellist:
+                                    <option value="{{one[0]}}">{{one[1]}}</option>
+                                %end
+                              </select>
+                            </div>
+                            <div class="yui-u">
+                               
+                              <button class="btn btn-small btn-success"  id="chenagechannel">分发</button>
+                            </div>
+                        </div>
+                       
+                      
+                    </div>
+                </div>
+                <div id="alert-area"></div>
+                <div class="yui-g" style="margin-top:50px">
+
+                    <!-- insert table  for  item  -->
+                   <input type="hidden" id="total" value="{{total}}"/>
+                   <input type="hidden" id="domain" value="{{domain}}"/>
+                    <input type="hidden" id="startpage" value="{{startpage}}"/>
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable">
+                          <thead>
+                              <tr align="center">
+                                    <th width="3%"><input id="allcheck"   type="checkbox">全选</th>
+                                    <th>ID</th>
+                                    <th>视频标题</th>
+                                    <th>视频类型</th>
+                                    <th>时长</th>
+                                    <th>视频状态</th>
+                                    <th>截图</th>
+                                    <th>播放次数</th>
+                                    <th>创建时间</th>
+                              </tr>
+                          </thead>   
+                          <tbody>
+                          
+                            %for one in all:
+                             <tr>
+                                    <td><input class="videoid" value={{one[0]}} type="checkbox"></td>
+                                    <td>{{one[1]}}</td>
+                                    <td><a href="{{play_domain}}/programs/view/{{one[6]}}/" target="view_window">{{one[2]}}</a></td>
+                                    <td>{{one[4]}}</td>
+                                    <td>{{one[12]}}</td>
+
+                                    <td>{{one[10]}}</td>
+                                    <td><img src="{{one[8]}}"/></td>
+                                    <td>{{one[9]}}</td>
+                                    <td>{{one[13]}}</td>
+                            </tr>
+                            %end
+                          </tbody>
+                  </table>       
+                   <div id="ttpage">
+                  </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal hide fade" id="myModal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3>消息</h3>
+      </div>
+      <div class="modal-body">
+        <p id="msgtext">您分发的节目在目标频道中已经存在,请选择是忽略导入已有视频或者覆盖已有视频.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal" >Close</a>
+        <a href="#" class="btn btn-primary" id="ignore">忽略</a>
+        <a href="#" class="btn btn-primary" id="update">覆盖</a>
+      </div>
+    </div>
+</div>
+</body>
+</html>

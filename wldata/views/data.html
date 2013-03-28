@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>视随心统计</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/my.css" type="text/css">
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/shunion/shunion.js"></script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t7">
+
+    <div id="bd" role="main">
+        <div class="yui-gb">
+            <div class="yui-u first">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>10天收入</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>收入(元)</strong></td>
+                            <td><strong>付费次数</strong></td>
+                        </tr>
+                        %fee=alllist['fee']
+                        %for one in fee:
+                        <tr>
+                            <td>{{one['date']}}</td>
+                            <td>{{one['fee']}}</td>
+                            <td>{{one['num']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+            </div>
+            <div class="yui-u">
+                  <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>10天推荐页PV</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>推荐页PV</strong></td>
+                        </tr>
+                        %indexpv=alllist['indexpv']
+                        %for one in indexpv:
+                        <tr>
+                            <td>{{one['date']}}</td>
+                            <td>{{one['indexpv']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+
+            </div>
+            <div class="yui-u">
+                    <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>10天详情页PV</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>详情页PV</strong></td>
+                        </tr>
+                        %iteminfopv=alllist['iteminfopv']
+                        %for one in iteminfopv:
+                        <tr>
+                            <td>{{one['date']}}</td>
+                            <td>{{one['pv']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div  role="main">
+        <div class="yui-gb">
+            <div class="yui-u first">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables" style= "word-break:break-all ">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>昨天付费视频TOP10</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>视频标题</strong></td>
+                            <td><strong>付费</strong></td>
+                        </tr>
+                        %itemtop10=alllist['itemtop10']
+                        %for one in itemtop10:
+                        <tr>
+                            <td>{{one['date']}}</td>
+                            <td style="width: 300px">{{one['title']}}</td>
+                            <td>{{one['fee']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+            </div>
+            <div class="yui-u">
+                   <div class="divtable">
+                    <table border="1" width="100%" class="tables" style= "word-break:break-all ">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>所有付费视频TOP10</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>序号</strong></td>
+                            <td><strong>视频标题</strong></td>
+                            <td><strong>付费</strong></td>
+                        </tr>
+                        %iteminfoorderbyfee=alllist['iteminfoorderbyfee']
+                        %for one in iteminfoorderbyfee:
+                        <tr>
+                            <td>{{one['num']}}</td>
+                            <td style="width: 300px">{{one['title']}}</td>
+                            <td>{{one['fee']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+
+            </div>
+            <div class="yui-u">
+                    <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>昨天搜索热词</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>搜索热词</strong></td>
+                            <td><strong>搜索次数</strong></td>
+                        </tr>
+                        %keywordtop10=alllist['keywordtop10']
+                        %for one in keywordtop10:
+                        <tr>
+                            <td>{{one['date']}}</td>
+                            <td>{{one['keyword']}}</td>
+                            <td>{{one['count']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div  role="main">
+        <div class="yui-gb">
+            <div class="yui-u first">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables" style= "word-break:break-all ">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>所有搜索热词TOP10</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>序号</strong></td>
+                            <td><strong>搜索热词</strong></td>
+                            <td><strong>搜索次数</strong></td>
+                        </tr>
+                        %keywordall=alllist['keywordall']
+                        %for one in keywordall:
+                        <tr>
+                            <td>{{one['num']}}</td>
+                            <td style="width: 300px">{{one['keyword']}}</td>
+                            <td>{{one['count']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+            </div>
+            <div class="yui-u">
+                   <div class="divtable">
+                    <table border="1" width="100%" class="tables" style= "word-break:break-all ">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>昨日频道点击TOP10</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>序号</strong></td>
+                            <td><strong>频道名称</strong></td>
+                            <td><strong>点击次数</strong></td>
+                        </tr>
+                        %channelvisit=alllist['channelvisit']
+                        %for one in channelvisit:
+                        <tr>
+                            <td>{{one['num']}}</td>
+                            <td style="width: 300px">{{one['channel']}}</td>
+                            <td>{{one['count']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+
+            </div>
+            <div class="yui-u">
+                    <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="3"  class="tdbanner"><h4>昨日地域访问top10</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>序号</strong></td>
+                            <td><strong>地区</strong></td>
+                            <td><strong>访问次数</strong></td>
+                        </tr>
+                        %areatop10=alllist['areatop10']
+                        %for one in areatop10:
+                        <tr>
+                            <td>{{one['num']}}</td>
+                            <td>{{one['area']}}</td>
+                            <td>{{one['count']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

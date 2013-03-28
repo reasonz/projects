@@ -1,0 +1,15 @@
+<!--底部导航 -->
+		<div class="g-bot" id="gBot">
+			<div class="b banner">
+				<a href="#" target="_blank"><img class="lazyImg" src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{domain}}/static/css/banner.png" width="980" height="90" /></a>
+			</div>
+			<ul>
+				<li>
+					<a href="#" target="_blank">帮助</a><a href="#" target="_blank">反馈</a><a href="#" target="_blank">关于我们</a>
+				</li>
+				<li>
+					China Mobile Copyright 2011 沪ICP备05000300号-4
+				</li>
+			</ul>
+			<div class="b-logo"></div>
+		</div>

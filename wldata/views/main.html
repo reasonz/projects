@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>土豆无线后台统计</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/data.css" type="text/css">
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var randomnumber = Math.floor(Math.random() * 100000);
+            $('.menubtn').click(function() {
+                url =   '{{domain}}'+this.lang + '?r=' + randomnumber  ;
+
+                $('#contentframe').attr('src', url);
+            });
+            $('#contentframe').attr('src', '{{domain}}/index/welcome?r=' + randomnumber);
+        })
+    </script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t1">
+    <div id="hd" role="banner" class="header_content">
+        <div class="logo" style="float: left;">
+            <img src="{{domain}}/static/image/logo_1.png" alt="土豆无线后台统计">
+        </div>
+
+    </div>
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" id="maincontent">
+                <iframe src="" id="contentframe" style="" frameborder="0" width="100%" onload="this.height=contentframe.document.body.scrollHeight+400"></iframe>
+            </div>
+        </div>
+        <div class="yui-b">
+            <div class="menu-left">
+                <div class="demos-nav">
+                    <h4>统计项目</h4>
+                    <ul>
+                        %for menu in mlist:
+                            <li class="demo-config-on"><a href="javascript:void(0)"><b>{{menu}}</b></a></li>
+                            %for one in mlist[menu]:
+                                <li class="demo-config-on"><a href="javascript:void(0)" class="menubtn" lang="{{one[4]}}">&nbsp;&nbsp;&nbsp;{{one[2]}}</a> 
+                                </li>
+                            %end
+                        %end
+                        <li class="demo-config-on"><a href="{{domain}}/index/home" class="menubtn"><b>退出登录</b></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

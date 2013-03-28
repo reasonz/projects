@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>G客G拍内容管理系统</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css" type="text/css">
+   
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/opa-icons.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+
+    <!-- custom dropdown library -->
+    <script src="{{domain}}/static/js/bootstrap/bootstrap-dropdown.js"></script> 
+
+    <script src="{{domain}}/static/js/bootstrap/hnsjcms.js"></script> 
+    <script type="text/javascript">
+        $(function() {
+            var randomnumber = Math.floor(Math.random() * 100000);
+            $('.menubtn').click(function() {
+                var url="";
+                if(this.lang.length!=0){
+                   
+                    if (this.lang.indexOf('?')>0){
+                        url =   '{{domain}}'+ this.lang + '&r=' + randomnumber  ;
+                    }else{
+                        url =   '{{domain}}'+ this.lang + '?r=' + randomnumber  ;
+                    }
+                    $('#contentframe').attr('src', url);
+                }
+            });
+            $('#contentframe').attr('src', '{{domain}}/index/welcome?r=' + randomnumber);
+        })
+
+        function iFrameHeight() { 
+            var ifm= document.getElementById("contentframe"); 
+            var subWeb = document.frames ? document.frames["contentframe"].document : ifm.contentDocument; 
+            if(ifm != null && subWeb != null) { 
+            ifm.height = subWeb.body.scrollHeight; 
+            } 
+            } 
+         
+    </script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t2">
+    <div id="hd" role="banner" class="header_content">
+       <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html"> <img alt="Charisma Logo" src="{{domain}}/static/image/img/logo20.png" /> <span>G客G拍内容管理系统</span></a>
+                
+                <!-- user dropdown starts -->
+                <div class="btn-group pull-right" >
+                    <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="icon-user"></i><span class="hidden-phone"> {{uname}}</span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{domain}}/index/home">Logout</a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" id="maincontent">
+                <iframe src="" id="contentframe" style=""frameborder="0" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" width="100%" onload="iFrameHeight();"></iframe>
+            </div>
+        </div>
+        <div class="yui-b" >
+            <div class="menu-left">
+                <ul class="nav nav-tabs nav-stacked main-menu">
+                    %for menu in mlist:
+                        <li class="menubtn"><a href="javascript:void(0)">{{menutype.get(menu)}}</a>
+                        %if len(mlist[menu])>0:
+                           <!--  <div style="display:none;">
+                                <ul class="nav nav-tabs nav-stacked main-menu" style="margin-top:5px;"> -->
+                            %for one in mlist[menu]:
+                                    <li class="menubtn"  lang="{{one[4]}}"><a  href="javascript:void(0)">
+                                        <div  style="margin-left:20px;">{{one[3]}}</div></a></li>
+                            %end
+                                <!-- </ul> -->
+                            <!-- </div>  -->
+                            </li>  
+                        %else:
+                            </li>
+                        %end
+                    %end
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

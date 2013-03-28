@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>无线后台统计</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/data.css" type="text/css">
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/chart/highcharts.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/chart/modules/exporting.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/tdwap/tdwap_visit.js"></script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="chart-option">
+                        <table style="margin-top: 3px;margin-bottom: 3px;margin-left: 15px;">
+                            <input type="hidden" id="ajaxvalue" value="{{timescope[0]}}|{{timescope[1]}}|{{jsonval}}"/>
+                               <input type="hidden" id="domain" value="{{domain}}"/>
+                                <input type="hidden" id="scopecount" value="{{scopecount}}"/>
+                            <tr>
+
+                                <td><p style="margin-left: 10px;">开始: <input type="text" id="start" size="30" value="{{timescope[0]}}"/></p>
+                                </td>
+                                <td><p style="margin-left: 10px;">结束: <input type="text" id="end" size="30" value="{{timescope[1]}}"/></p>
+                                </td>
+                                <td>&nbsp;&nbsp;
+                                    <select id="area">
+                                        <option value="all" >---地区---</option>
+                                        %for ar  in allarea:
+                                            %if str(ar['id']) == str(selected['area']) :
+                                                <option value="{{ar['id']}}" selected="selected">{{ar['name']}}</option>
+                                            %else:
+                                                <option value="{{ar['id']}}">{{ar['name']}}</option>
+                                            %end
+                                        %end 
+                                    </select>
+                                    <select id="ver">
+                                        <option value="all">---版本---</option>
+                                        %for vv  in [{'id':1,'name':'简版'},{'id':2,'name':'彩版'},{'id':3,'name':'PC版'},{'id':4,'name':'android版'},{'id':5,'name':'iphone版'}]:
+                                             %if str(vv['id']) == str(selected['ver']) :
+                                                <option value="{{vv['id']}}" selected="selected">{{vv['name']}}</option>
+                                             %else:
+                                                <option value="{{vv['id']}}">{{vv['name']}}</option>
+                                             %end  
+                                        %end
+                                    </select>
+                                    <select id="wap">
+                                        <option value="all">---运营商---</option>
+                                        %for ww  in [{'id':1,'name':'NET'},{'id':2,'name':'WAP'}]:
+                                             %if str(ww['id']) == str(selected['wap']) :
+                                                <option value="{{ww['id']}}" selected="selected">{{ww['name']}}</option>
+                                             %else:
+                                                <option value="{{ww['id']}}">{{ww['name']}}</option>
+                                             %end  
+                                        %end
+                                    </select>
+                                </td>
+                                <td>
+                                    <a href="#" id="searchbtn" style="margin-left: 10px">查询</a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+                
+                <div class="yui-g" style="margin-top:20px">
+                        <div class="divtable">
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="5" class="tdbanner" style="background-color: #cccccc;text-align: left;"><h4  style="margin-left: 20px;"><b>时间段内总量</b></h4></td>
+                                </tr>
+                                <tr>
+                                    <td   width="20%"><strong>日期</strong></td>
+                                    <td  width="20%"><strong>PV</strong></td>
+                                    <td  width="20%"><strong>CV</strong></td>
+                                   
+                                </tr>
+                                  <tr>
+                                    <td   width="20%"><strong>{{timescope[0]}} 00:00:00~~~{{timescope[1]}} 00:00:00</strong></td>
+                                    <td  width="20%"><strong>{{scopecount['pvcount']}}</strong></td>
+                                    <td  width="20%"><strong>{{scopecount['cvcount']}}</strong></td>
+                                   
+                                </tr>
+                              </table>
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="5" class="tdbanner" style="background-color: #cccccc; text-align: left; "><h4 style="margin-left: 20px;"><b>手土访问量/播放量</b></h4></td>
+                                </tr>
+                                <tr>
+                                    <td   width="20%"><strong>时间段</strong></td>
+                                    <td  width="20%"><strong>PV</strong></td>
+                                    <td  width="20%"><strong>CV</strong></td>
+                                  
+                                </tr>
+                                %for one in all:
+                                <tr>
+                                    <td>{{one['day']}}</td>
+                                    <td>{{one['pv']}}</td>
+                                    <td>{{one['cv']}}</td>
+                                </tr>
+                                %end
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="yui-g" style="margin-top:20px">
+                    <div class="chart-div">
+                        <div id="container" style="min-width: 300px; height: 400px; "></div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

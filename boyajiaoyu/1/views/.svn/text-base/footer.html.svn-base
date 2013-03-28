@@ -1,0 +1,26 @@
+<div id="footermain">
+  
+<!-- 页脚【start】 -->
+<div id="footer">
+    <div class="copyright">
+    <style type="text/css">
+        .mb_foot_block {position:relative;}
+        .mb_foot_block a{display:inline;}
+    </style>
+    <div id="MODBLK_196" class="mod_block mb_foot_block">
+<div class="com_con">Copyright © 2009-2011,www.yourname.com,All rights reserved<br>
+版权所有 © 您的网站名称 未经许可 严禁复制 建议使用1024X768分辨率浏览本站<br>Power by <a href="http://www.sitestar.cn/" target="_blank" title="建站之星(sitestar)网站建设系统" style="display:inline;">建站之星</a>|<a href="http://www.cndns.com/" target="_blank" title="域名注册|域名申请|域名尽在“美橙互联”" style="display:inline;">美橙互联</a>&nbsp;版权所有</div><div class="list_bot"></div>
+</div>
+沪ICP备XXXXXX号    </div>
+</div>
+<script type="text/javascript" language="javascript" src="http://boyajiaoyu.sinaapp.com/static/boya_files/picAutoZoom.js"></script>
+<script type="text/javascript" language="javascript">
+<!--
+    $.ajaxSetup({
+        timeout: 300000
+    });
+//-->
+</script>
+<!-- 页脚【end】 -->
+
+</div>

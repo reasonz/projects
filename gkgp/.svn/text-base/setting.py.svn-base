@@ -1,0 +1,37 @@
+__author__ = 'reason'
+import sys
+from os.path import abspath, dirname, join
+sys.path.insert(0, abspath(dirname(__file__)))
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+project_path = dirname(__file__) 
+print project_path
+TEM_PATH = project_path + '/views/'
+STATIC_PATH = project_path + '/static/'
+# SITE_DOMAIN = 'http://61.158.153.25/cms' 
+# SITE_DOMAIN = 'http://10.151.20.39:9090'
+SITE_DOMAIN = 'http://10.151.20.49:9090'
+# SITE_DOMAIN='http://0.0.0.0:9090'
+
+# remote api setting
+username='gkgp_cmcc@163.com'
+pwd='ZAQ!xsw2'
+appkey='c58dad0ed452b2d3'
+open_api_url='http://api.tudou.com/v3/gw'
+SECRET_KEY="gkgp_tudou"
+UID="UID"
+VREYCODE = "VREYCODE"
+
+#db setting
+host='10.25.251.101'
+port=10040
+password='ZAQ!4rfv'
+username='ssx_dbmanage'
+dbname='gkgp'
+
+
+#job setting
+
+

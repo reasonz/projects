@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>权限管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/data.css" type="text/css">
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+     <script type="text/javascript" src="{{domain}}/static/option/option.js"></script>
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="chart-option">
+                        <table style="margin-top: 3px;margin-bottom: 3px;margin-left: 15px;">
+                            <tr>
+                                <td>用户选择 : </td>
+                                <td>
+                                    <select style="width: 100px;" id="userlist">
+                                          <option >--选择用户--</option>
+                                        %for one in alluser:
+                                            <option value="{{one[0]}}">{{one[1]}}</option>
+                                        %end
+                                    </select>
+                                </td>
+                                <td>
+                                    <a href="#" id="savebutton" style="margin-left: 10px">保存设置</a>
+                                </td>
+
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+                <div class="yui-g" style="margin-top:50px">
+
+
+                        <div class="divtable">
+                            <table  width="100%" class="tables">
+                                <tr>
+                                    <td colspan="3" class="tdbanner"><h4>用户权限设置</h4></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>列表权限</strong></td>
+                                    <td><strong>是否开启</strong></td>
+                                </tr>
+                                %for one in allmenu:
+                                <tr>
+                                    <td>{{one[1]}}</td>
+                                    <td><input type="checkbox" name="power" class="power" lang="{{one[0]}}"/> </td>
+                                </tr>
+                                %end
+                            </table>
+                        </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

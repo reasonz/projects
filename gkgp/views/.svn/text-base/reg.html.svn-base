@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>2013G客盛典 视频_播客_个人多媒体 土豆网</title>
+		<meta name="Keywords" content="音乐频道,视频下载,体育视频,在线视频,免费视频,自拍,视频教学,网络视频"/>
+		<meta name="Description" content="上传你的视频，观看海量视频节目。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。"/>
+		<link type="text/css" href="{{domain}}/static/css/g.css" rel="stylesheet" />
+		<link type="text/css" href="{{domain}}/static/css/v.css" rel="stylesheet"/>
+		<script type="text/javascript">
+			function changeimg(){
+				document.getElementById("vcodeImg").src="{{domain}}/code?time="+new Date();
+			}
+
+			function checkStatus(){
+				
+				ck = document.getElementById("checkid");
+				if(!ck.checked){
+					alert("对不起，您不能注册，请先阅读相关用户协议！");
+					return false;
+				}else{
+					return true;
+				}
+				
+			}
+		</script>
+	</head>
+	<body>	
+		<!--顶部导航 -->
+		%include header domain=domain
+		<input type="hidden" name="domainval" id="domainval" value="{{domain}}"/>
+		<!--页面主体 -->
+		<div class="fr">
+			<div class="upload-box">
+				<div class="from reg">
+					<h2>快速注册</h2>
+
+					<form id="frmReg" class="frm_upload" method="post" enctype="multipart/form-data" action="{{domain}}/user/reg" onsubmit="return checkStatus();">
+						<input type="hidden" id="ref" name="ref" value="{{ref}}"/>
+						<div class="tr">
+							<em>电子邮件：</em>
+							<input type="text" class="text3" id="username" name="username"/>
+							<span class="red">{{uerr}}</span>
+							<br />
+							<span class="tip">填写你常用的邮箱作为登录帐号。还没有邮箱？<a href="#" target="_blank">注册一个吧</a></span>
+						</div>
+						<div class="tr">
+							<em>登录密码：</em>
+							<input type="password" class="text4" id="password"  name="password"/>
+							<span class="red">{{perr}}</span>
+							<br />
+							<span class="tip">4-20位，可使用英文（区分大小写），数字和符号</span>
+						</div>
+						<div class="tr">
+							<em>你的昵称：</em>
+							<input type="text" class="text4" id="nickName" name="nickname"/>
+							<span class="red">{{nerr}}</span>
+							<br />
+							<span class="tip">该怎么称呼你？不超过7个汉字或14个英文、数字、_和-</span>
+						</div>
+						<div class="tr">
+							<em>验证码：</em>
+							<input type="text" class="text4" id="varifycode"  name="varifycode"/>
+							<span class="red">{{verr}}</span>
+							<br />
+							<span class="tip">为了防止机器人恶意注册，请输入下面的验证码</span>							
+
+						</div>
+						<div class="tr">
+							<div class="vcode_img">
+								<img src="{{domain}}/code" id="vcodeImg" title="看不清？换一张吧" alt="">　看不清，
+								<a id="changeCode" href="javascript:changeimg();">点这里换一张</a>
+							</div>
+						</div>
+						<div class="tr">
+							<input type="checkbox" checked="checked" id="checkid"/>
+							<span class="tip">我已阅读并同意G客网的<a href="#" target="_blank">帐号使用协议</a></span>
+						</div>
+						<div class="tr">
+							<input type="submit" class="btn-ipt" value="注册" id="regBtn" />
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!--底部导航 -->
+		<div class="g-bot" id="gBot">
+			<div class="b banner">
+				<a href="#" target="_blank"><img class="lazyImg" src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{domain}}/static/css/banner.png" width="980" height="90" /></a>
+			</div>
+			<ul>
+				<li>
+					<a href="#" target="_blank">帮助</a><a href="#" target="_blank">反馈</a><a href="#" target="_blank">关于我们</a>
+				</li>
+				<li>
+					China Mobile Copyright 2011 沪ICP备05000300号-4
+				</li>
+			</ul>
+			<div class="b-logo"></div>
+		</div>
+
+		<script>
+            var preModuleLib = ["http://js.tudouui.com/js/fn/tuidefer2_2.js", "http://js.tudouui.com/js/fn/global/viewRecord_16.js", "http://js.tudouui.com/js/fn/translate_4.js"];
+		</script>
+		<script src="{{domain}}/static/js/tuilib2.js"></script>
+		<script src="{{domain}}/static/js/v.js"></script>
+		<script type="text/javascript" src="{{domain}}/static/js/ulogin.js"></script>
+	</body>
+</html>

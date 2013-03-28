@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>用户管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/data.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/option/option.js"></script>
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="chart-option">
+                        <table style="margin-top: 3px;margin-bottom: 3px;margin-left: 15px;">
+                            <tr>
+                                <td>
+                                    <a href="#" id="adduser" style="margin-left: 10px">添加用户</a>
+                                </td>
+                                <td>
+                                    <a href="#" id="deluser" style="margin-left: 10px">删除用户</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="yui-g" style="margin-top:50px">
+
+                    <div class="divtable">
+                        <table width="100%" class="tables">
+                            <tr>
+                                <td colspan="3" class="tdbanner"><h4>用户管理</h4></td>
+                            </tr>
+                            <tr>
+                                <td><strong>用户ID</strong></td>
+                                <td><strong>用户名称</strong></td>
+                                <td><strong>&nbsp;</strong></td>
+                            </tr>
+                            %for one in alluser:
+                            <tr>
+                                <td>{{one[0]}}</td>
+                                <td>{{one[1]}}</td>
+                                <td><input type="checkbox" name="userop" class="userop" lang="{{one[0]}}"/></td>
+                            </tr>
+                            %end
+                        </table>
+                    </div>
+                    <div class="divtable" id="adduserdiv" style="display: none;">
+                        <form action="{{domain}}/option/adduser" method="post" id="adduserform">
+                            <table width="100%" class="tables">
+                                <tr>
+                                    <td>用户名</td>
+                                    <td><input type="text" name="username"></td>
+                                </tr>
+                                <tr>
+                                    <td>密码</td>
+                                    <td><input type="password" name="password"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#" id="commitbtn" style="margin-left: 10px">提交</a></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

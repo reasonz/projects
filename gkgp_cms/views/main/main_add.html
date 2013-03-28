@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>菜单管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <!-- data table plugin -->
+    <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/main/main.js"></script>
+
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<input type="hidden" id="selectmodule" value="{{selectmodule}}"/> 
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="item_option">
+                  <form class="form-horizontal" id="add_main_form" method="POST" enctype="multipart/form-data" action="{{domain}}/main/add">
+                    <fieldset>
+                      <legend>添加首页信息</legend>
+                      
+                       <div class="control-group">
+                        <label class="control-label">标题</label>
+                        <div class="controls">
+                        <input type="text" class="input-xlarge" name="title">
+                        </div>
+                      </div>
+
+                      <div class="control-group">
+                        <label class="control-label">短描述</label>
+                        <div class="controls">
+                        <input type="text" class="input-xlarge" name="brif_desc">
+                        </div>
+                      </div>
+
+                      <div class="control-group">
+                      <label class="control-label">详情</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="description" >
+                      </div>
+                    </div>
+
+                     <div class="control-group">
+                      <label class="control-label" for="selectError3">类型</label>
+                      <div class="controls">
+                        <select id="item_type" name="item_type">
+                          %for one in itemdict.keys():
+                            <option value="{{one}}">{{itemdict.get(one)}}</option>
+                          %end
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">版块</label>
+                      <div class="controls">
+                        <select id="module" name="module">
+                          %for one in moduledict.keys():
+                            <option value="{{one}}">{{moduledict.get(one)}}</option>
+                          %end
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">itemcode</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="item_code">
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">链接地址</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="link_url">
+                      </div>
+                    </div>
+                   
+                    <div class="control-group">
+                      <label class="control-label">位置</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="position">
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">小图</label>
+                      <div class="controls">
+                     
+                      <input type="text" name="smallpicname" />
+                      <input type="file" name="small_pic" />
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">大图</label>
+                      <div class="controls">
+                  
+                      <input type="text" name="bigpicname" />
+                      <input type="file" name="big_pic" />
+                      </div>
+                    </div>
+
+                   
+                    <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">保存</button>
+                    <button type="reset" class="btn" id="reset">取消</button>
+                  </div>
+                  </fieldset>
+                </form>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<div id="right">
+          <div id="MODBLK_214" class="mod_block mb_HiK4bdIW_block">
+<h3 class="blk_t">服务课程</h3>
+
+
+<div class="list_main category">
+    <div class="prod_type">
+    <div id="pro_type_bCwQdZ">
+        <ul>
+                <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=30">
+    外语培训</a>
+    <ul>
+            <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=34">
+    英语</a>
+        </li>
+        <li style="border: 0px;">
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=35">
+    小语种</a>
+        </li>
+        </ul>
+        </li>
+        <li class="">
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=31" class="">
+    电脑培训</a>
+    <ul style="z-index: 1000; display: none;">
+            <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=36">
+    等级考试</a>
+        </li>
+        <li style="border: 0px;">
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=37">
+    IT认证</a>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=32">
+    资格认证</a>
+    <ul>
+            <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=38">
+    公务员</a>
+        </li>
+        <li style="border: 0px;">
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=39">
+    会计</a>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=33">
+    学历教育</a>
+    <ul>
+            <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=40">
+    自学考试</a>
+        </li>
+        <li style="border: 0px;">
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=41">
+    考研辅导</a>
+        </li>
+        </ul>
+        </li>
+        <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=42">
+    才艺培训</a>
+    <ul>
+            <li>
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=43">
+    舞蹈培训</a>
+        </li>
+        <li style="border: 0px;">
+        <a href="http://jiaoyu10a7.site3.sitestar.cn/jiaoyu10a7/wwwroot/index.php?_m=mod_product&amp;_a=prdlist&amp;cap_id=44">
+    书法美术</a>
+        </li>
+        </ul>
+        </li>
+                <div class="blankbar1"></div>
+        </ul>        
+    </div>
+    </div>
+    <div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+
+<script type="text/javascript" language="javascript">
+/**
+ * for menu-drop type
+ */
+var type = "";
+if (type == 'click') {
+    $(function(){
+        $('#pro_type_bCwQdZ li:has(ul)').click(function(event){
+            if (this == event.target) {
+                if ($(this).children().is(':hidden')) {
+                    $(this).css({background:'url(template/jiaoyu-101207-a7/images/minus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+                    .children().show();
+                    
+                      $(this).siblings().each(function (){
+                          $(this).find("ul").hide();
+                          if ($(this).children().is("ul")){
+                              $(this).css({background:'url(template/jiaoyu-101207-a7/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+                          }
+                      });
+                } else {
+                    $(this).css({background:'url(template/jiaoyu-101207-a7/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'})
+                    .find("ul").hide();
+                }  
+            }
+        }).css('cursor','pointer');
+              
+        $('#pro_type_bCwQdZ li:has(ul)').css({background:'url(template/jiaoyu-101207-a7/images/plus.gif) no-repeat left 13px','text-indent':'16px','padding-top':'3px'});
+                
+        $('#pro_type_bCwQdZ li:not(:has(ul))').css({cursor: 'pointer','list-style-image':'none'});
+    });
+} else {
+     $("#pro_type_bCwQdZ > ul").droppy();
+    $("#pro_type_bCwQdZ ul ul li:last-child").css("border","0px");
+}
+</script>
+
+
+</div>
+<div id="MODBLK_212" class="mod_block mb_kc1HkfiU_block">
+<h3 class="blk_t">行业新闻</h3>
+<div class="list_main">
+    <div class="list_con">
+    <ul class="titlelist">
+     
+    </ul>
+
+    <div class="list_bot"></div>
+</div>
+<div class="blankbar"></div>
+</div>
+<div id="MODBLK_205" class="mod_block mb_dIIpF19w_block">
+<h3 class="blk_t">在线客服</h3>
+
+<div class="qq_list_con">
+<ul>
+    <li><a href="tencent://message/?uin=800015083&amp;Menu=yes" target="blank"><img src="http://boyajiaoyu.sinaapp.com/static/boya_files/pa" align="absMiddle" border="0">在线客服(800015083)</a></li>
+
+    <li><a href="tencent://message/?uin=800015083&amp;Menu=yes" target="blank"><img src="http://boyajiaoyu.sinaapp.com/static/boya_files/pa" align="absMiddle" border="0">在线客服(800015083)</a></li>
+
+</ul>
+</div>
+<div class="list_bot"></div>
+<div class="blankbar"></div>
+
+ 
+
+</div>
+ 
+
+</div>
+        </div>

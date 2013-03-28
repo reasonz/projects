@@ -1,0 +1,19 @@
+#encoding=utf-8
+__author__ = 'reason'
+from lib.bottle import template,Bottle,request,view
+from lib.cachewrap import cache
+from dbsetting import dbsetting as db
+import sys,hashlib
+from setting import    SITE_DOMAIN
+reload(sys)
+sys.setdefaultencoding('utf-8')
+app = Bottle()
+
+#http://www.tudou.com/programs/view/yCrBRo8UAuI/
+@app.route('/view/:itemcode/')
+@view('play')
+def play(itemcode):
+	item = db.query_one('select t1.id,t1.itemcode,t.username,t.id,t1.title,t1.addtime,t1.description,t1.playtimes \
+	  from gkgp_user t,gkgp_item t1 ,gkgp_user_item t2 where t1.id = t2.videoid and t2.userid = t.id and \
+	   itemcode=%s',(itemcode))
+	return dict(domain=SITE_DOMAIN,itemcode=itemcode,item=item)

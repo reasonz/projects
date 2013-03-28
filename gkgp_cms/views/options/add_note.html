@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>菜单管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <!-- data table plugin -->
+    <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/channel/channel.js"></script>
+
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" >
+                <div class="item_option">
+                  <form class="form-horizontal" id="add_channel_form" method="POST" action="{{domain}}/notice/updatenote">
+                    <fieldset>
+                      <legend>添加公告</legend>
+                      <input type="hidden" name="note_id" value="{{note['note_id']}}"/>
+                      <div class="control-group">
+                        <label class="control-label">公告</label>
+                        <div class="controls">
+                        <textarea rows="6"  name="note_value" style="width:80%;overflow:auto">{{note['note_value']}}</textarea>
+                        </div>
+                      </div>
+                    <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">保存</button>
+                    <button type="reset" class="btn" id="reset">取消</button>
+                  </div>
+                  </fieldset>
+                </form>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

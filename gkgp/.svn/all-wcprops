@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/server/!svn/ver/302/gkgp
+END
+setting.py
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/server/!svn/ver/274/gkgp/setting.py
+END
+start.py
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/server/!svn/ver/289/gkgp/start.py
+END
+sftp-config.json
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/server/!svn/ver/289/gkgp/sftp-config.json
+END

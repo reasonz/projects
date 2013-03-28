@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>菜单管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript"  src='{{domain}}/static/js/bootstrap/bootstrap-alert.js'></script>
+    <script type="text/javascript"  src='{{domain}}/static/js/bootstrap/bootstrap-tab.js'></script>
+    <!-- data table plugin -->
+    <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/template/template.js"></script>
+
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" >
+                <div class="item_option">
+                  
+
+                  <ul class="nav nav-tabs" id="myTab">
+                    %for one in sysconfig:
+                        <li><a href="#{{one}}">{{sysconfig[one].get('title')}}</a></li>
+                    %end
+                  </ul>
+                   
+                  <div class="tab-content">
+                    %for one in sysconfig:
+                      <div class="tab-pane" id="{{one}}">
+
+                        <form class="form-horizontal" id="add_channel_form" method="POST" action="{{domain}}/template/update">
+                          <fieldset>
+                            <legend>{{sysconfig[one].get('title')}}</legend>
+                            <input type="hidden" name="config_id" value="{{sysconfig[one].get('id')}}"/>
+                            <div class="control-group">
+                              <label class="control-label">{{sysconfig[one].get('title')}}</label>
+                              <div class="controls">
+                              <textarea rows="10"  name="config_value" style="width:80%;overflow:auto">{{sysconfig[one].get('value')}}</textarea>
+                              </div>
+                            </div>
+                          <div class="form-actions">
+                          <button type="submit" class="btn btn-primary">保存</button>
+                          <button type="reset" class="btn" id="reset">取消</button>
+                        </div>
+                        </fieldset>
+                      </form>
+
+                      </div>
+                    %end
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

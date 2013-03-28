@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JavaScript API</title>
+    <script type="text/javascript" src="http://j.maxmind.com/app/geoip.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    var area = "";
+    try {
+        if (geoip_city() != "" && geoip_city() != null)
+            area += geoip_city() + ", ";
+        if (geoip_region_name() != "" && geoip_region_name() != null)
+            area += geoip_region_name() + ", ";
+        if (geoip_country_name() != "" && geoip_country_name() != null)
+            area += geoip_country_name();
+        if (geoip_latitude() != "" && geoip_latitude() != null)
+            area += geoip_latitude()+ ", ";
+        if (geoip_longitude() != "" && geoip_longitude() != null)
+            area += geoip_longitude();
+
+        alert(area);
+    }
+    catch(err) {
+        area = "";
+    }
+</script>
+</body>
+</html> 

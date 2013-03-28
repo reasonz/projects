@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>修改视频</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <!-- data table plugin -->
+    <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/channel/channel.js"></script>
+
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" >
+                <div class="item_option">
+                  <form class="form-horizontal" id="edit_video_form" method="POST"  enctype="multipart/form-data" action="{{domain}}/channel/edit_video">
+                    <fieldset>
+                      <legend>视频信息修改</legend>
+                      <input type="hidden" id="itemid"  name ="itemid" value="{{itemid}}">
+                      <input type="hidden" name = "productids" id="productids" >
+                      <div class="control-group">
+                        <label class="control-label">视频名称</label>
+                        <div class="controls">
+                        <input type="text" class="input-xlarge" name="title" value="{{v[5]}}">
+                        </div>
+                      </div>
+
+                      <div class="control-group">
+                      <label class="control-label">视频简介</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="description" value="{{v[1]}}">
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">视频图片</label>
+                      <div class="controls">
+                      <!-- <input type="text" class="input-xlarge" name="picurl" value="{{v[2]}}"> -->
+                      <img src="http://61.158.153.22/static{{v[2]}}"/>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">视频大图</label>
+                      <div class="controls">
+                      <!-- <input type="text" class="input-xlarge" name="picurl" value="{{v[2]}}"> -->
+                      %imgurl=v[6]
+                      %if not v[6]:
+                      %imgurl='/static/upload_img/noimg.png'
+                      %end
+                      <img  width=300 src="http://61.158.153.25/cms{{imgurl}}"/><br>
+                      <input type="text" name="name" value="http://61.158.153.25/cms{{imgurl}}"/>
+                      <input type="file" name="bigpic" />
+                      </div>
+
+                    </div>
+
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">状态</label>
+                      <div class="controls">
+                        <select id="status" name="status" value={{v[4]}}>
+                        <option value="0">可用</option>
+                        <option value="1">不可用</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">当前产品</label>
+                      <div class="controls">
+                          <table class="table-striped table-bordered bootstrap-datatable datatable" id="current_product" style="width:40%">
+                            <thead>
+                              <tr align="center">
+                                    <th>&nbsp;</th>
+                                    <th>产品ID</th>
+                                    <th>产品</th>
+                              </tr>
+                          </thead>   
+                        
+                          %for one in p:
+                            <tr>
+                              <td><a href="javascript:void(0)" class="removeproduct">删除</a></td>
+                              <td class="tp">{{one[3]}}</td>
+                              <td>{{one[4]}}</td>
+                            </tr>
+                          %end
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">产品信息</label>
+                      <div class="controls">
+                        <select id="product" name="product">
+                          <option value="-1">--选择要添加的产品--</option>
+                        %for one in allproductlist:
+                          <option value="{{one[0]}}">{{one[1]}}</option>
+                        %end
+                        </select>
+                        <button type="button" class="btn btn-primary" id="add_product">添加产品</button>
+                      </div>
+
+                    </div>
+                    <div id="alert-area"></div>
+
+                    <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">保存</button>
+                    <button type="reset" class="btn" id="reset">取消</button>
+                  </div>
+                  </fieldset>
+
+                </form>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

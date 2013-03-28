@@ -1,0 +1,48 @@
+#encoding=utf-8
+__author__ = 'reason'
+from lib.bottle import template,Bottle,request
+from lib.cachewrap import cache
+import sys,hashlib
+from dbsetting import dbsetting
+from setting import    SITE_DOMAIN
+reload(sys)
+sys.setdefaultencoding('utf-8')
+app = Bottle()
+
+@app.route('/index')
+def index():
+	#画廊 module=1
+	hualang = findItem(1,8)
+	#G客盛典 module=3
+	gksd = findItem(3,5)
+	#热门影院 module=2
+	hotvideo = findItem(2,9)
+	#排行 module=5
+	ranking = findItem(5,5)
+	#G客校园行 module=4
+	gkschool = findItem(4,5)
+	return template('index',dict(domain=SITE_DOMAIN,hualang=hualang)) 
+    #return template('index',dict(domain=SITE_DOMAIN)) 
+
+
+@app.route('/upload.html')
+def upload():
+    return template('upload',dict(domain=SITE_DOMAIN))
+
+@app.route('/reg.html')
+def reg():
+    return template('reg',dict(domain=SITE_DOMAIN))
+
+@app.route('/play.html')
+def play():
+    return template('play',dict(domain=SITE_DOMAIN))
+
+
+def findItem(module,num):
+	sql='''select id, title, brif_desc, description, item_type, item_code, link_url, position, small_pic, big_pic, module, addTime, status, updateTime from 
+		gkgp_main_setting  where status=1 and  module=%s order by position asc,updateTime desc limit %s '''
+	return dbsetting.query_list(sql,(module,num))
+
+
+
+

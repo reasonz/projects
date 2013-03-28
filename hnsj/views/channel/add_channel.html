@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>菜单管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <!-- data table plugin -->
+    <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/channel/channel.js"></script>
+
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" >
+                <div class="item_option">
+                  <form class="form-horizontal" id="add_channel_form" method="POST" action="{{domain}}/channel/insert">
+                    <fieldset>
+                      <legend>添加频道</legend>
+
+                      <div class="control-group">
+                        <label class="control-label">频道名称</label>
+                        <div class="controls">
+                        <input type="text" class="input-xlarge" name="channel_name">
+                        </div>
+                      </div>
+
+                      <div class="control-group">
+                      <label class="control-label">频道别名</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="alias">
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">描述</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="description">
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">状态</label>
+                      <div class="controls">
+                        <select id="channel_status" name="channel_status">
+                        <option value="0">可用</option>
+                        <option value="1">不可用</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">是否收费</label>
+                      <div class="controls">
+                        <select id="is_fee" name="is_fee">
+                        <option value="0">免费</option>
+                        <option value="1">收费</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">频道类型</label>
+                      <div class="controls">
+                        <select id="channel_type" name="channel_type">
+                        <option value="1">普通频道</option>
+                        <option value="2" >推荐视频</option>
+                        <option value="3">视频头条</option>
+                        <option value="4">视频排行</option>
+                        <option value="5">视频推荐</option>
+                        <option value="6">海报</option>
+                        <option value="7">精彩推荐</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">是否在首页显示</label>
+                      <div class="controls">
+                        <select id="index_display" name="index_display">
+                        <option value="0">不显示</option>
+                        <option value="1" >显示</option>
+                       
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">保存</button>
+                    <button type="reset" class="btn" id="reset">取消</button>
+                  </div>
+                  </fieldset>
+                </form>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

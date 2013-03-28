@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<!-- <html> -->
+<html xmlns:wb="http://open.weibo.com/wb">
+	<head>
+		<meta charset="utf-8"/>
+		<title>2013G客盛典 视频_播客_个人多媒体 土豆网</title>
+		<meta name="Keywords" content="音乐频道,视频下载,体育视频,在线视频,免费视频,自拍,视频教学,网络视频"/>
+		<meta name="Description" content="上传你的视频，观看海量视频节目。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。"/>
+		<link type="text/css" href="{{domain}}/static/css/g.css" rel="stylesheet" />
+		<link type="text/css" href="{{domain}}/static/css/v.css" rel="stylesheet"/>
+
+	</head>
+	<body>
+    	<input type="hidden" name="domainval" id="domainval" value="{{domain}}"/>
+        <input type="hidden" id="itemcode" value="{{itemcode}}"/>
+		<!--顶部导航 -->
+		%include header domain=domain
+
+		<input type="hidden" name="domainval" id="domainval" value="{{domain}}"/>
+
+		<!--页面主体 -->
+		<div class="fr">
+			<div class="h_col">
+				<h2 class="vd-title">
+					{{item[4]}}
+				</h2>
+				<div class="vd-area" id="vdArea">
+						<embed src="http://www.tudou.com/v/{{itemcode}}/&autoPlay=true/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="980" height="500"></embed> 
+				</div>
+				<div class="vd-panel-bg">
+
+				</div>
+				<div class="vd-panel">					
+					<a href="#" class="play-all"> 收看全片</a>
+					
+					<div class="dig_bury_box">
+						<a id="btnDig" class="btn_dig" title="喜欢就挖它"><i></i><em>{{item[8]}}</em></a>
+						<a id="btnBury" class="btn_bury" title="不喜欢就埋它"><i></i><em>{{item[9]}}</em></a>
+					</div>
+					
+					<div class="share-btn">
+						<a href="#" title="转贴到新浪微博">
+							<wb:share-button count="n" url="{{domain+'/programs/view/'+itemcode+'/'}}" title="{{item[4]}}" pic="{{item[10]}}"></wb:share-button>
+						</a>
+						<a href="#"  title="转贴到腾讯微博" >
+							<div id="qqwb_share__" data-appkey="801321884" data-icon="2" data-counter="0" data-content="{{item[4]}}" data-richcontent="{{domain+'/programs/view/'+itemcode+'/'}}" data-pic="{{item[10]}}"></div>
+						</a>
+						
+
+						
+					</div>
+					
+					<div class="play_num">播放数: <span id="vPlayNum" title="播放次数">{{item[7]}}</span></div>
+					
+					
+				</div>
+			</div>
+			<!-- =======================宽栏======================= start-->
+			<div class="m_col">
+				<!-- <div class="vd-info">
+					<h3><a href="#">{{item[2]}}</a> 上传于{{item[5]}}   <a href="#">单独观看本视频</a></h3>
+					<p class="info-p" id="infoP">
+						<span{{item[6]}}</span>
+						<a href="#" class="info-mo"  id="infoMo">了解更多</a>	
+					</p>
+					
+				</div> -->
+				
+				<div class="b mod_vdlist_n1">
+					<div class="h">
+						<h2>首发</h2>
+						<div class="ap">
+							<ul class="tl">
+								<li>
+									&nbsp;
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+					<div class="c">
+						<div class="bc">
+							<div class="c2">
+								<div class="pack pack_focus_mid">
+									<div class="pic">
+										<a target="_blank" href="{{firstvideo[0][6]}}"> <img width="291" height="210" class="lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{picdomain}}/{{firstvideo[0][9]}}" /> </a>
+									</div>
+									<div class="txt">
+										<h6 class="caption"><a title="{{firstvideo[0][1]}}" target="_blank" href="{{firstvideo[0][6]}}">{{firstvideo[0][1]}}</a><span class="plays">播放次数：56523次</span></h6>
+										<ul class="info">
+											<li>
+												{{firstvideo[0][2]}}
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bc">
+							<div class="c2">
+								<div class="row2">
+
+
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="{{firstvideo[1][6]}}" title="{{firstvideo[1][1]}}" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{picdomain}}/{{firstvideo[1][8]}}">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="{{firstvideo[1][6]}}" title="{{firstvideo[1][1]}}" target="new">{{firstvideo[1][1]}}</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="{{firstvideo[2][6]}}" title="{{firstvideo[2][1]}}" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{picdomain}}/{{firstvideo[2][8]}}">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="{{firstvideo[2][6]}}" title="{{firstvideo[2][1]}}" target="new">{{firstvideo[2][1]}}</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+
+									
+								</div>
+
+								<div class="row2">
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="{{firstvideo[3][6]}}" title="{{firstvideo[3][1]}}" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{picdomain}}/{{firstvideo[3][8]}}">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="{{firstvideo[3][6]}}" title="{{firstvideo[3][1]}}" target="new">{{firstvideo[3][1]}}</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="{{firstvideo[4][6]}}" title="{{firstvideo[4][1]}}" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{picdomain}}/{{firstvideo[4][8]}}">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="{{firstvideo[4][6]}}" title="{{firstvideo[4][1]}}" target="new">{{firstvideo[4][1]}}</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- =======================窄栏 =======================start-->
+			<div class="s_col">
+
+
+
+
+				<div class="b user-info">
+					<div class="h">
+						<h2>播客信息</h2>
+					</div>
+					<h3><a href="#">{{item[2]}}</a> 上传于{{item[5]}}   <a href="#">单独观看本视频</a></h3>
+					<p class="info-p" id="infoP">
+						<span>{{item[6]}}</span>
+						<a href="#" class="info-mo"  id="infoMo">了解更多</a>	
+					</p>
+				</div>	
+			<!-- 	<div class="b user-info">
+					<div class="h">
+						<h2>播客信息</h2>
+					</div>
+					<div class="c">
+						<div class="pack pack_mini">
+							<div class="pic">
+								<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+								<div class="inner">
+									<img width="50" height="50" src="http://i3.tdimg.com/b/20121108/co59.jpg">
+								</div>
+							</div>
+							<div class="txt">
+								<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+								<ul class="info">
+									<li class="d_nums">网罗天下奇闻轶事</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				
+				<div class="b vlist">
+					<div class="h">
+						<h2>用户上传视频</h2>
+					</div>
+					<div class="c">
+
+
+						%for i,one in enumerate(othervideos):
+							
+							%if i%2==1:
+								<div class="row">
+							%end
+							<div class="pack pack_video_card">
+								<div class="pic">
+									<a href="{{domain}}/programs/view/{{one[2]}}/" title="{{one[0]}}" target="new"></a>
+									<div class="inner">
+										<img width="132" height="99" class="clip_img" src="{{one[1]}}">
+									</div>
+								</div>
+								<div class="txt">
+									<h6 class="caption"><a href="{{domain}}/programs/view/{{one[2]}}/" title="{{one[0]}}" target="new">{{one[0]}}</a></h6>
+								</div>
+							</div>
+							
+							%if i%2==1:	
+								</div>
+							%end
+
+						%end
+
+						
+						
+						
+						
+						
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+		<!--底部导航 -->
+		%include footer domain=domain
+		
+		
+		<script>
+			//视频信息
+			var VDINFO = {
+				code: '6ZcKe--N6QA'
+			}
+			
+		</script>
+
+
+		<script src="{{domain}}/static/js/tuilib2.js"></script>
+
+		<script src="{{domain}}/static/js/v.js"></script>		
+		<script src="{{domain}}/static/js/play.js"></script>
+		<script type="text/javascript" src="{{domain}}/static/js/ulogin.js"></script>
+		<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=" type="text/javascript" charset="utf-8"></script>
+		<script src="http://mat1.gtimg.com/app/openjs/openjs.js#autoboot=no&debug=no"></script>
+	</body>
+</html>

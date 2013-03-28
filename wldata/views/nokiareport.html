@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>视随心统计</title>
+    <link rel="stylesheet" href="/static/css/reset-fonts-grids.css"
+          type="text/css">
+    <link rel="stylesheet" href="/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="/static/css/my.css" type="text/css">
+    <script type="text/javascript" src="/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="/static/shunion/shunion.js"></script>
+</head>
+<body class="yui-skin-sam">
+<div id="doc3" class="yui-t7">
+    <div id="hd" role="banner" class="header_content">
+        <div class="logo">
+            <h1><strong><b>NOKIA S40 每日报表</b></strong></h1>
+        </div>
+    </div>
+    <div id="bd" role="main">
+        <div class="yui-gb">
+            <div class="yui-u first">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="6" class="tdbanner"><h4>日报综合</h4></td>
+                        </tr>
+                        %one=alllist['mix']
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td>{{one['day']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>New AU</strong></td>
+                            <td>{{one['newau']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Daily AU</strong></td>
+                            <td>{{one['au']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Daily Download User</strong></td>
+                            <td>{{one['downuser']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Daily Download Times</strong></td>
+                            <td>{{one['downtimes']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AU30</strong></td>
+                            <td>{{one['au30']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>总付费用户</strong></td>
+                            <td>{{one['feeuser']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>总付费记录</strong></td>
+                            <td>{{one['feecount']}}</td>
+                        </tr>
+                        <tr>
+                            <td><strong>总用户</strong></td>
+                            <td>{{one['allusercount']}}</td>
+                        </tr>
+                         <tr>
+                            <td><strong>总付费比率</strong></td>
+                            <td>{{round(float(one['feeuser'])/float(one['allusercount'])*100,2)}}%</td>
+                        </tr>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="yui-u">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="5" class="tdbanner"><h4>渠道每日AU</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>渠道ID</strong></td>
+                            <td><strong>渠道名称</strong></td>
+                            <td><strong>总用户数</strong></td>
+                            <td><strong>新用户数</strong></td>
+                        </tr>
+                        %auch=alllist['auchid']
+                        %for one in auch:
+                        <tr>
+                            <td>{{auch[one]['date']}}</td>
+                            <td>{{one}}</td>
+                            <td>{{auch[one]['qdname']}}</td>
+                            <td>{{auch[one]['aucount']}}</td>
+                            <td>{{auch[one]['newaucount']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="yui-u">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="5" class="tdbanner"><h4>过去7天用户数</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>序号</strong></td>
+                            <td><strong>渠道ID</strong></td>
+                            <td><strong>渠道名称</strong></td>
+                            <td><strong>总用户数</strong></td>
+                        </tr>
+                        %au7days=alllist['au7days']
+                        %for one in au7days:
+                        <tr>
+                            <td>{{one['num']}}</td>
+                            <td>{{one['chid']}}</td>
+                            <td>{{one['qdname']}}</td>
+                            <td>{{one['count']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="bd2" role="main">
+        <div class="yui-gb">
+            <div class="yui-u first">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="5" class="tdbanner"><h4>机型每日AU</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>机型</strong></td>
+
+                            <td><strong>总用户数</strong></td>
+                            <td><strong>新用户数</strong></td>
+                        </tr>
+                        %aubyua=alllist['aubyua']
+                        %for one in aubyua:
+                        <tr>
+                            <td>{{aubyua[one]['date']}}</td>
+                            <td>{{aubyua[one]['ua']}}</td>
+                            <td>{{aubyua[one]['aucount']}}</td>
+                            <td>{{aubyua[one]['newaucount']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+            </div>
+
+            <div class="yui-u">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="5" class="tdbanner"><h4>机型每日下载</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>机型</strong></td>
+                            <td><strong>下载数</strong></td>
+                        </tr>
+                        %uadown=alllist['uadown']
+                        %for one in uadown:
+                        <tr>
+                            <td>{{str(one[2]).split(' ')[0]}}</td>
+                            <td>{{str(one[1])}}</td>
+                            <td>{{int(one[0])}}</td>
+
+                        </tr>
+                        %end
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="yui-u">
+                <div class="divtable">
+                    <table border="1" width="100%" class="tables">
+                        <tr>
+                            <td colspan="5" class="tdbanner"><h4>各频道用户数下载量</h4></td>
+                        </tr>
+                        <tr>
+                            <td><strong>日期</strong></td>
+                            <td><strong>频道ID</strong></td>
+                            <td><strong>频道名称</strong></td>
+                            <td><strong>用户数</strong></td>
+                            <td><strong>下载量</strong></td>
+                        </tr>
+                        %userchannel=alllist['userchannel']
+                        %for one in userchannel:
+                        <tr>
+                             <td>{{one['date']}}</td>
+                            <td>{{one['channelid']}}</td>
+                            <td>{{one['channelname']}}</td>
+                            <td>{{one['usercount']}}</td>
+                            <td>{{one['downcount']}}</td>
+                        </tr>
+                        %end
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

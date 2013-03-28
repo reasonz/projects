@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>菜单管理</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/data.css" type="text/css">
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/option/option.js"></script>
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b">
+                <div class="yui-g">
+                    <div class="chart-option">
+                        <table style="margin-top: 3px;margin-bottom: 3px;margin-left: 15px;">
+                            <tr>
+                                <td>
+                                    <a href="#" id="addmenu" style="margin-left: 10px">添加菜单</a>
+                                </td>
+                                <td>
+                                    <a href="#" id="delmenu" style="margin-left: 10px">删除菜单</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="yui-g" style="margin-top:50px">
+
+                    <div class="divtable">
+                        <table width="100%" class="tables">
+                            <tr>
+                                <td colspan="5" class="tdbanner"><h4>用户管理</h4></td>
+                            </tr>
+                            <tr>
+                                <td><strong>菜单ID</strong></td>
+                                <td><strong>菜单名称</strong></td>
+                                <td><strong>菜单路径</strong></td>
+                                <td><strong>所属项目</strong></td>
+                                <td><strong>&nbsp;</strong></td>
+                            </tr>
+                            %for one in allmenu:
+                            <tr>
+                                <td>{{one[0]}}</td>
+                                <td>{{one[1]}}</td>
+                                <td>{{one[2]}}</td>
+                                <td>{{one[3]}}</td>
+                                <td><input type="checkbox" name="userop" class="userop" lang="{{one[0]}}"/></td>
+                            </tr>
+                            %end
+                        </table>
+                    </div>
+                    <div class="divtable" id="addmenudiv" style="display: none;">
+                        <form action="{{domain}}/option/addmenu" method="post" id="addmenuform">
+                            <table width="100%" class="tables">
+                                <tr>
+                                    <td>菜单名称</td>
+                                    <td><input type="text" name="menuname"></td>
+                                </tr>
+                                <tr>
+                                    <td>路径</td>
+                                    <td><input type="text" name="url"></td>
+                                </tr>
+                                <tr>
+                                    <td>所属项目</td>
+                                    <td>
+                                        <select name="projectid">
+                                            %for one in allproject:
+                                                <option value="{{one[0]}}">{{one[1]}}</option>
+                                            %end
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#" id="menucommitbtn" style="margin-left: 10px">提交</a></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

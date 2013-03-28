@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>2013G客盛典 视频_播客_个人多媒体 土豆网</title>
+		<meta name="Keywords" content="音乐频道,视频下载,体育视频,在线视频,免费视频,自拍,视频教学,网络视频"/>
+		<meta name="Description" content="上传你的视频，观看海量视频节目。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。"/>
+		<link type="text/css" href="{{domain}}/static/css/g.css" rel="stylesheet" />
+		<link type="text/css" href="{{domain}}/static/css/v.css" rel="stylesheet"/>
+
+	</head>
+	<body>
+		<!--顶部导航 -->
+		<div class="g-top" id="gTop">
+			<div class="g_main">
+				<div class="g_main_c">
+					<div class="logo mobile">
+						<a title="土豆网 tudou.com 每个人都是生活的导演" href="http://www.tudou.com">手机视频</a>
+					</div>
+					<div class="logo">
+						<a title="土豆网 tudou.com 每个人都是生活的导演" href="http://www.tudou.com">G客G拍</a>
+					</div>
+					<div class="g-search">
+						<form action="http://www.soku.com/t/nisearch.do" method="get" searchtype="" target="_blank">
+							<div class="g-search-box">
+								<input class="g-search-text tui_searchint" type="text" accesskey="s" value="" name="kw" autocomplete="off" onfocus="this['_gs_focus']=1" onblur="this['_gs_focus']=0" />
+							</div>
+							<input class="g-search-submit" type="submit" value="搜索" />
+							<input type="hidden" value="td.t" name="cid" disabled="disabled" />
+						</form>
+						<div class="g-extra">
+							<ol class="g-hotwords"></ol><a href="http://www.tudou.com/top/rank.html" class="g-rank" target="_blank">排行榜</a>
+						</div>
+					</div>
+					<ul class="g-user" id="uInfo">
+						<li class="g-viewlist view_record" id="viewRecordNav">
+							<span class="handle"><b class="view_icon"> </b><a href="http://www.tudou.com/my/programs/watched.html#watched">观看历史</a></span>
+							<div class="g-viewlist-nav" id="viewRecordWrap">
+								<div class="sub_tp"></div>
+								<div class="sub_bd">
+									<p id="viewRecordNotify" class="viewRecord_notify"><img src="http://css.tudouui.com/skin/__g/img/loading3.gif">
+									</p><div id="viewRecordContainer" class="viewRecord_container"></div>
+									<div id="viewRecordDo" class="viewRecord_do">
+										<a id="viewRecordSave" href="http://www.tudou.com/my/programs/watched.html#watched/?page=1&amp;sort=1&amp;desc=true&amp;save=true" class="save">永久保存观看记录</a>
+									</div>
+								</div>
+								<div class="sub_ft">
+									<a href="http://www.tudou.com/my/playlist/list/quicklist.html">我的点播单(<em id="quickNum">0</em>)</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="reg.html" id="reg">注册</a>
+						</li>
+						<li>
+							<a href="http://login.tudou.com/login.do?noreg=ok" id="loginDo">登录</a>
+						</li>
+					</ul><a class="g-upload" href="upload.html">上传视频</a>
+				</div>
+			</div>
+			<div class="g_nav">
+				<div class="g_nav_main">
+					<ul class="g-nav-master" id="master">
+						<li class="current">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="upload.html">上传1</a>
+						</li>
+						<li>
+							<a href="reg.html">注册</a>
+						</li>
+						<li>
+							<a href="http://cartoon.tudou.com/">动漫</a>
+						</li>
+						<li><a href="play.html">播放页</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--页面主体 -->
+		<div class="fr">
+			<div class="h_col">
+				<h2 class="vd-title">
+					{{item[4]}}
+				</h2>
+				<div class="vd-area" id="vdArea">
+						<embed src="http://www.tudou.com/v/{{itemcode}}/&autoPlay=true/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="980" height="500"></embed> 
+				</div>
+				<div class="vd-panel-bg">
+
+				</div>
+				<div class="vd-panel">					
+					<a href="#" class="play-all"> 收看全片</a>
+					
+					<div class="dig_bury_box">
+						<a href="#" id="btnDig" class="btn_dig" title="喜欢就挖一下吧"><i></i><em>23203</em></a>
+						<a href="#" id="btnBury" class="btn_bury" title="被埋0次"><i></i><em>320</em></a>
+					</div>
+					
+					<div class="share-btn">
+						<a href="#" class="tw-weibo" title="转贴到新浪微博" id="twWeibo"></a>
+						<a href="#" class="tw-qq" title="转贴到腾讯微博" id="twQQ"></a>
+						<a href="#" class="tw-baidu" title="转贴到百度贴吧" id="twBaidu"></a>
+					</div>
+					
+					<div class="play_num">播放数:<span id="vPlayNum" title="播放次数">{{item[7]}}</span></div>
+					
+					
+				</div>
+			</div>
+			<!-- =======================宽栏======================= start-->
+			<div class="m_col">
+				<div class="vd-info">
+					<h3><a href="#">{{item[2]}}</a> 上传于{{item[5]}}   <a href="#">单独观看本视频</a></h3>
+					<p class="info-p" id="infoP">
+						<span{{item[6]}}</span>
+						<a href="#" class="info-mo"  id="infoMo">了解更多</a>	
+					</p>
+					
+				</div>
+				
+				<div class="b mod_vdlist_n1">
+					<div class="h">
+						<h2>首发</h2>
+						<div class="ap">
+							<ul class="tl">
+								<li>
+									<a href="http://hunan.tudou.com/" title="全部" target="_blank">全部</a>
+								</li>
+								<li>
+									<a href="http://beijing.tudou.com/" title="剧情" target="_blank">剧情</a>
+								</li>
+								<li>
+									<a href="http://zhejiang.tudou.com/" title="完美中国" target="_blank">完美中国</a>
+								</li>
+								<li>
+									<a href="http://jiangsu.tudou.com/" title="动画" target="_blank">动画</a>
+								</li>
+								<li>
+									<a href="http://city.tudou.com/" title="创意" target="_blank">创意</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="c">
+						<div class="bc">
+							<div class="c2">
+								<div class="pack pack_focus_mid">
+									<div class="pic">
+										<a target="_blank" href="http://www.tudou.com/listplay/Hwy70sdyvBc/XzYFFx4qB64.html"> <img width="291" height="210" class="lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="http://i2.tdimg.com/b/20121107/c378.jpg" /> </a>
+									</div>
+									<div class="txt">
+										<h6 class="caption"><a title="梁朝伟曝拍床戏细" target="_blank" href="http://www.tudou.com/listplay/Hwy70sdyvBc/XzYFFx4qB64.html">梁朝伟曝拍内幕</a><span class="plays">播放次数：56523次</span></h6>
+										<ul class="info">
+											<li>
+												学生妹月入三万追求仲尼遭遇委婉拒绝
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bc">
+							<div class="c2">
+								<div class="row2">
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="http://i3.tdimg.com/b/20121108/co59.jpg">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="http://i3.tdimg.com/b/20121108/co59.jpg">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="row2">
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="http://i3.tdimg.com/b/20121108/co59.jpg">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="pack pack_video_card">
+										<div class="pic">
+											<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+											<div class="inner">
+												<img width="132" height="99" class="clip_img lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="http://i3.tdimg.com/b/20121108/co59.jpg">
+											</div>
+										</div>
+										<div class="txt">
+											<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+											<ul class="info">
+												<li class="d_nums">
+													<span class="d_play" title="播放">22,697</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- =======================窄栏 =======================start-->
+			<div class="s_col">
+
+				<div class="b user-info">
+					<div class="h">
+						<h2>播客信息</h2>
+					</div>
+					<div class="c">
+						<div class="pack pack_mini">
+							<div class="pic">
+								<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+								<div class="inner">
+									<img width="50" height="50" src="http://i3.tdimg.com/b/20121108/co59.jpg">
+								</div>
+							</div>
+							<div class="txt">
+								<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+								<ul class="info">
+									<li class="d_nums">网罗天下奇闻轶事</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="b vlist">
+					<div class="h">
+						<h2>用户上传视频</h2>
+					</div>
+					<div class="c">
+						<div class="row">
+							<div class="pack pack_video_card">
+								<div class="pic">
+									<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+									<div class="inner">
+										<img width="132" height="99" class="clip_img" src="http://i3.tdimg.com/b/20121108/co59.jpg">
+									</div>
+								</div>
+								<div class="txt">
+									<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+								</div>
+							</div>
+							<div class="pack pack_video_card">
+								<div class="pic">
+									<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+									<div class="inner">
+										<img width="132" height="99" class="clip_img" src="http://i3.tdimg.com/b/20121108/co59.jpg">
+									</div>
+								</div>
+								<div class="txt">
+									<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+								</div>
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="pack pack_video_card">
+								<div class="pic">
+									<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+									<div class="inner">
+										<img width="132" height="99" class="clip_img" src="http://i3.tdimg.com/b/20121108/co59.jpg">
+									</div>
+								</div>
+								<div class="txt">
+									<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+								</div>
+							</div>
+							<div class="pack pack_video_card">
+								<div class="pic">
+									<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="张韶涵黑白视觉演绎MV" target="new"></a>
+									<div class="inner">
+										<img width="132" height="99" class="clip_img" src="http://i3.tdimg.com/b/20121108/co59.jpg">
+									</div>
+								</div>
+								<div class="txt">
+									<h6 class="caption"><a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="柳岩搞怪发嗲冷翻全场" target="new">柳岩搞怪发嗲冷翻全场 城市频道新发现</a></h6>
+								</div>
+							</div>
+							
+						</div>
+						
+						
+						
+						
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</div>
+		<!--底部导航 -->
+		<div class="g-bot" id="gBot">
+			<div class="b banner">
+				<a href="#" target="_blank"><img class="lazyImg" src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="{{domain}}/static/css/banner.png" width="980" height="90" /></a>
+			</div>
+			<ul>
+				<li>
+					<a href="#" target="_blank">帮助</a><a href="#" target="_blank">反馈</a><a href="#" target="_blank">关于我们</a>
+				</li>
+				<li>
+					China Mobile Copyright 2011 沪ICP备05000300号-4
+				</li>
+			</ul>
+			<div class="b-logo"></div>
+		</div>
+		
+		
+		<script>
+			//视频信息
+			var VDINFO = {
+				code: '6ZcKe--N6QA'
+			}
+			
+		</script>
+
+
+		<script src="{{domain}}/static/js/tuilib2.js"></script>
+
+		<script src="{{domain}}/static/js/v.js"></script>		
+		<script src="{{domain}}/static/js/play.js"></script>
+
+	</body>
+</html>

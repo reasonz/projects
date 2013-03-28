@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8"/>
+		<title>2013G客盛典 视频_播客_个人多媒体 土豆网</title>
+		<meta name="Keywords" content="音乐频道,视频下载,体育视频,在线视频,免费视频,自拍,视频教学,网络视频"/>
+		<meta name="Description" content="上传你的视频，观看海量视频节目。土豆热爱原创，每个人都是生活的导演，戴上土豆面具，每个人都是明星。"/>
+		<link type="text/css" href="{{domain}}/static/css/g.css" rel="stylesheet" />
+		<link type="text/css" href="{{domain}}/static/css/v.css" rel="stylesheet"/>
+
+	</head>
+	<body>	
+		%include header domain=domain
+
+		<input type="hidden" name="domainval" id="domainval" value="{{domain}}"/>
+		<!--页面主体 -->
+		<div class="fr">
+			<div class="list-box">
+				<h2>我的上传</h2>
+				<div class="list-cont">
+					<div class="list-h">
+						<label><input type="checkbox" id="selectAll" /> 全选</label>
+						<a href="#" id="listDel" class="list-del" title="批量删除"></a>
+						<div class="list-ops">
+							<span>排序：<a href="#" class="desc">上传时间</a></span>
+							<span><a href="#" class="asc">播放次数</a></span>
+						</div>
+					</div>
+						
+					<ul class="list">
+						%for v in videos:
+						<li>
+							<input type="checkbox" class="checkbox" value="{{v[0]}}"/>
+							
+							<div class="pack pack_video_card">
+								<div class="pic">
+									<a href="http://www.tudou.com/listplay/YZlEzcOJEqs.html" title="{{v[2]}}" target="new"></a>
+									<div class="inner">
+										<img width="82" height="61" class="lazyImg"  src="http://css.tudouui.com/skin/__g/img/sprite.gif" alt="http://i3.tdimg.com/b/20121108/co59.jpg" />
+									</div>
+								</div>
+								<div class="txt">
+									<h6 class="caption">
+										<a href="http://www.tudou.com/listplay/Wt2VeuUZGOY/ElANfeAsepo.html" title="{{v[2]}}" target="new">{{v[2]}}</a>[00:30]
+									</h6>
+									<ul class="info">
+										<li>
+											{{v[13]}} 上传 <span class="d-nums">{{v[9]}}</span>
+										</li>
+										<li class="d-attr">
+											<span class="hd-480"></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="li-ops">
+								<a href="#" class="btn-edit" title="编辑"></a>
+								<a href="#" class="btn-del" title="删除"></a>
+							</div>
+							
+						</li>
+
+						%end
+					</ul>
+						
+				</div>
+
+					<!--分页start-->
+					{{!pg}}
+					<!--分页end-->
+			</div>		
+		</div>
+
+		<!--底部导航 -->
+		%include footer domain=domain
+		<script src="{{domain}}/static/js/tuilib2.js"></script>
+		<script src="{{domain}}/static/js/v.js"></script>
+		<script type="text/javascript" src="{{domain}}/static/js/ulogin.js"></script>
+	</body>
+</html>

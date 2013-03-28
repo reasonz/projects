@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/server/!svn/ver/294/gkgp/module
+END
+code.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/server/!svn/ver/267/gkgp/module/code.py
+END
+openapi.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/server/!svn/ver/253/gkgp/module/openapi.py
+END
+userutil.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/server/!svn/ver/237/gkgp/module/userutil.py
+END
+user.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/server/!svn/ver/289/gkgp/module/user.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/server/!svn/ver/274/gkgp/module/__init__.py
+END
+verifycode.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/server/!svn/ver/273/gkgp/module/verifycode.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/server/!svn/ver/274/gkgp/module/utils.py
+END
+dbsetting.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/server/!svn/ver/289/gkgp/module/dbsetting.py
+END
+main.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/server/!svn/ver/289/gkgp/module/main.py
+END
+upload.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/server/!svn/ver/294/gkgp/module/upload.py
+END
+play.py
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/server/!svn/ver/275/gkgp/module/play.py
+END
+index.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/server/!svn/ver/289/gkgp/module/index.py
+END
+mylog.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/server/!svn/ver/262/gkgp/module/mylog.py
+END

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>修改视频</title>
+    <link rel="stylesheet" href="{{domain}}/static/css/reset-fonts-grids.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/redmond/jquery-ui.css"
+          type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/bootstrap-classic.css" type="text/css">
+
+    <link rel="stylesheet" href="{{domain}}/static/css/classic/charisma-app.css" type="text/css">
+    <link rel="stylesheet" href="{{domain}}/static/js/jPaginate/css/style.css" type="text/css">
+
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jquery-ui-1.8.21.custom.min.js"></script>
+    <!-- data table plugin -->
+    <script src='{{domain}}/static/js/jquery.dataTables.min.js'></script>
+    <script type="text/javascript" src="{{domain}}/static/js/jPaginate/jquery.paginate.js"></script>
+    <script type="text/javascript" src="{{domain}}/static/js/channel/channel.js"></script>
+
+
+</head>
+<body class="yui-skin-sam">
+<input type="hidden" id="domain" value="{{domain}}"/>    
+<div id="doc3" class="yui-t">
+    <div id="bd" role="main">
+        <div id="yui-main">
+            <div class="yui-b" >
+                <div class="item_option">
+                  <form class="form-horizontal" id="add_channel_form" method="POST" action="{{domain}}/channel/insert">
+                    <fieldset>
+                      <legend>视频信息修改</legend>
+
+                      <div class="control-group">
+                        <label class="control-label">视频名称</label>
+                        <div class="controls">
+                        <input type="text" class="input-xlarge" name="channel_name" value="{{v[5]}}">
+                        </div>
+                      </div>
+
+                      <div class="control-group">
+                      <label class="control-label">视频简介</label>
+                      <div class="controls">
+                      <input type="text" class="input-xlarge" name="description" value="{{v[1]}}">
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label">视频图片</label>
+                      <div class="controls">
+                      <!-- <input type="text" class="input-xlarge" name="picurl" value="{{v[2]}}"> -->
+                      <img src="http://61.158.153.22/static{{v[2]}}"/>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">状态</label>
+                      <div class="controls">
+                        <select id="status" name="status" value={{v[4]}}>
+                        <option value="0">可用</option>
+                        <option value="1">不可用</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="control-group">
+                      <label class="control-label" for="selectError3">产品信息</label>
+                      <div class="controls">
+                        <select id="product" name="product">
+                        %for one in allproductlist:
+                          <option value="{{one[0]}}">{{one[1]}}</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    
+                    
+                  </fieldset>
+                </form>
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
